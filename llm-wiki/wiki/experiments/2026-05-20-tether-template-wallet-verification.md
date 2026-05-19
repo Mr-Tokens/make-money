@@ -48,4 +48,4 @@ Contents:
 
 ## Next Action
 
-Draft the application pack, then ask the human to submit or confirm whether a dedicated project identity should be used for Tether contact details.
+Review [Tether Template Wallet Application Pack v0.1](../../../deliverables/tether-template-wallet-application-pack-v0.1/README.md), then ask the human to submit or confirm whether a dedicated project identity should be used for Tether contact details.
