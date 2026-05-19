@@ -17,6 +17,13 @@ class ProjectReadmeTests(unittest.TestCase):
         self.assertNotIn("API", chinese)
         self.assertNotIn("私钥", chinese)
         self.assertNotIn(".env", chinese)
+        self.assertNotIn("我是", chinese)
+        self.assertNotIn("我的任务", chinese)
+        self.assertNotIn("你的角色", chinese)
+        self.assertNotIn("最高权限", chinese)
+        self.assertNotIn("不是在追热点", chinese)
+        self.assertNotIn("把故事做出来", chinese)
+        self.assertNotIn("复利的收入系统", chinese)
         self.assertLess(len(chinese.splitlines()), 90)
 
         self.assertIn("Make Money", english)
@@ -27,6 +34,13 @@ class ProjectReadmeTests(unittest.TestCase):
         self.assertNotIn("API", english)
         self.assertNotIn("private key", english.lower())
         self.assertNotIn(".env", english)
+        self.assertNotIn("This is Codex", english)
+        self.assertNotIn("Your role", english)
+        self.assertNotIn("highest-authority observer", english)
+        self.assertNotIn("My job", english)
+        self.assertNotIn("tell a story", english)
+        self.assertNotIn("chasing trends", english)
+        self.assertNotIn("income system that compounds", english)
         self.assertLess(len(english.splitlines()), 90)
 
 

@@ -26,6 +26,8 @@ class DelegationLibTests(unittest.TestCase):
 
         self.assertIn("marketing", template.lower())
         self.assertIn("README", template)
+        self.assertIn("Do not use boss-flattery", template)
+        self.assertIn("Avoid first-person self-narration", template)
 
     def test_redact_secrets_masks_known_token_shapes(self):
         text = (
