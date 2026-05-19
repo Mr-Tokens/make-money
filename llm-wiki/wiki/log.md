@@ -25,3 +25,6 @@
 - Integrated Web3Grants and Tari subthread outputs: Web3Grants is useful for Batch 002 discovery, while Tari #3111 is a contested backup and should not be executed without maintainer confirmation.
 - Created the Tether Template Wallet Application Pack v0.1 as the first concrete deliverable package for human review before submission.
 - Published the project repository at https://github.com/Mr-Tokens/make-money after privacy review.
+- Added a public README support section with transparent wallet addresses and non-investment wording.
+- Added Sesame (芝麻), a cute Chinese domestic cat in an astronaut helmet, as the public project mascot image.
+- Updated public README language to credit the manager/worker model split across Codex, Mimo, and MiniMax.
