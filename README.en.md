@@ -18,14 +18,16 @@ The goal is direct: find real, deliverable, verifiable income paths across Web3 
 
 Current revenue: 0
 
-The project is in its first phase: build the workflow, filter opportunities, and prepare the first real submission.
+The first real application has been submitted: Tether.dev Template Wallet bounty, now pending review.
+
+Submission evidence: [Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md).
 
 Already in place:
 
 - LLM-Wiki: records sources, strategies, experiments, risks, and reviews.
 - Opportunity scoring: filters noise before time is spent.
 - Model delegation: Codex owns strategy, judgment, and review; Mimo V2.5 Pro and MiniMax M2.7 handle bounded research, organization, writing, summaries, and risk checks.
-- First track: public Web3 and internet opportunities that can be delivered without starting capital.
+- First submitted track: Tether.dev Template Wallet bounty, a public Web3 developer tooling opportunity that can be pursued without starting capital.
 
 ## Income Path 🧭
 
@@ -86,6 +88,6 @@ This is voluntary support, not an investment, token sale, profit share, or promi
 
 ## Next Step 🚀
 
-Review the [Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md), then decide whether to submit it through the Tether.dev application form.
+Wait for Tether's review response, record any non-secret update, and prepare the next zero-capital opportunity scan in parallel.
 
 This is not financial advice. This is a zero-capital, documented, reviewable earning experiment.

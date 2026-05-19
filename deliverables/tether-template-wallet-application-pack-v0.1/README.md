@@ -1,6 +1,6 @@
 # Tether Template Wallet Application Pack v0.1
 
-Status: ready for human submission review
+Status: submitted, pending review
 Date: 2026-05-20
 Target: [Tether.dev Template Wallet bounty](https://tether.dev/grants/bounties/2800541287/)
 Visible bounty amount: `2,000 USDt`
@@ -9,7 +9,7 @@ Visible bounty amount: `2,000 USDt`
 
 This folder contains the first concrete deliverable package for the Make Money project.
 
-It is designed to support a human-submitted application to Tether's Template Wallet bounty. It does not submit anything, sign anything, connect a wallet, handle funds, or claim that a bounty has been awarded.
+It supported a human-submitted application to Tether's Template Wallet bounty. It does not sign anything, connect a wallet, handle funds, or claim that a bounty has been awarded.
 
 ## Files
 
@@ -26,6 +26,6 @@ It is designed to support a human-submitted application to Tether's Template Wal
 
 ## Manager Decision
 
-The recommended next step is human review of this pack and `submission-form-draft.md`, followed by human submission through the Tether.dev application form if the user accepts the risks and wants to proceed.
+The application has been submitted by the human project owner. The recommended next step is to wait for Tether's review response, record any non-secret update, and keep the project ready for scope refinement if Tether replies.
 
 No revenue is recorded until Tether accepts work and payment is confirmed.

@@ -18,14 +18,16 @@ Make Money 的开局很简单：没有本金，不讲暴富，只用真实交付
 
 当前收入：0
 
-项目处在第一阶段：搭建流程，筛选机会，准备第一次真实提交。
+第一次真实申请已经提交：Tether.dev Template Wallet 赏金，目前等待对方审查。
+
+提交证据：[Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md)。
 
 已经就位的部分：
 
 - LLM-Wiki：记录来源、策略、实验、风险和复盘。
 - 机会评分：先筛掉噪音，再决定是否投入时间。
 - 模型分工：Codex 负责策略、判断和验收；Mimo V2.5 Pro 与 MiniMax M2.7 处理有边界的研究、整理、写作、总结和风险检查。
-- 第一条主线：从 Web3 与互联网公开机会里寻找可交付任务。
+- 第一条已提交主线：Tether.dev Template Wallet 赏金，一个可在零本金条件下推进的 Web3 开发者工具机会。
 
 ## 收入路径 🧭
 
@@ -86,6 +88,6 @@ README 只展示简版进展；完整过程进入 LLM-Wiki。
 
 ## 下一步 🚀
 
-审阅 [Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md)，然后决定是否通过 Tether.dev 表单提交。
+等待 Tether 审查回复，记录任何非敏感进展，同时并行准备下一轮零本金机会扫描。
 
 这不是财务建议。这是一次零本金、可记录、可复盘的收入实验。

@@ -15,6 +15,7 @@
 | Source | Path |
 |--------|------|
 | Tether verification raw note | `llm-wiki/raw/sources/2026-05-20-tether-template-wallet-verification.md` |
+| Tether submission confirmation note | `llm-wiki/raw/sources/2026-05-20-tether-template-wallet-submission-confirmation.md` |
 | Tether verification experiment | `llm-wiki/wiki/experiments/2026-05-20-tether-template-wallet-verification.md` |
 | Opportunity Scan Batch 001 | `llm-wiki/wiki/experiments/2026-05-20-opportunity-scan-batch-001.md` |
 
@@ -22,7 +23,7 @@
 
 ```text
 Application package: prepared
-Bounty application: not submitted
+Bounty application: submitted
 Bounty acceptance: none
 Revenue: 0
 ```
@@ -30,3 +31,15 @@ Revenue: 0
 ## 2026-05-20 Recheck
 
 The Template Wallet page still showed the visible `2,000 USD₮` amount, the `24/03/2026` date, the framework gap statement, and form fields for full name, email address, website, relevant experience, and terms agreement. The terms page still showed `Last updated April 1, 2026` and preserved the human-only legal review concerns around eligibility, due diligence/KYC, written agreement, non-confidential application materials, and no guarantee of acceptance or economic benefit.
+
+## 2026-05-20 Submission
+
+Human-submitted application through the Tether.dev Template Wallet bounty form.
+
+Returned page message:
+
+```text
+Thank you for your application! We will review it and get back to you soon.
+```
+
+Current status: submitted, pending Tether review. No bounty acceptance or revenue has been recorded.

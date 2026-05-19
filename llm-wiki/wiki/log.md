@@ -34,3 +34,4 @@
 - Rechecked the Tether Template Wallet bounty page and grant terms before moving the application pack toward submission review.
 - Ran and approved the MiniMax non-high-speed `MiniMax-M2.7` smoke task; both configured worker providers are now usable.
 - Added a public-safe Tether `submission-form-draft.md` while keeping contact email and legal identity details out of tracked files.
+- Recorded human submission of the Tether.dev Template Wallet bounty application and the returned confirmation message: "Thank you for your application! We will review it and get back to you soon."

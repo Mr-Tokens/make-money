@@ -26,10 +26,12 @@ class DeliverableTests(unittest.TestCase):
     def test_tether_application_pack_preserves_safety_and_claim_boundaries(self):
         combined = "\n".join(path.read_text(encoding="utf-8") for path in PACK.glob("*.md"))
 
-        self.assertIn("Bounty application: not submitted", combined)
+        self.assertIn("Bounty application: submitted", combined)
         self.assertIn("Bounty acceptance: none", combined)
         self.assertIn("Revenue: 0", combined)
-        self.assertIn("ready for human submission review", combined)
+        self.assertIn("submitted, pending review", combined)
+        self.assertIn("Thank you for your application!", combined)
+        self.assertIn("Tether submission confirmation note", combined)
         self.assertIn("Relevant Experience Draft", combined)
         self.assertIn("https://github.com/Mr-Tokens/make-money", combined)
         self.assertIn("Do not paste private credentials", combined)

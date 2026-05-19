@@ -46,6 +46,7 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("Mimo platform docs", manifest)
         self.assertIn("OpenAI Agents docs", manifest)
         self.assertIn("GitHub Trending README style references", manifest)
+        self.assertIn("Tether Template Wallet submission confirmation", manifest)
 
     def test_github_readme_style_guide_protects_public_claims(self):
         style = (LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md").read_text(encoding="utf-8")
@@ -81,8 +82,8 @@ class LlmWikiStructureTests(unittest.TestCase):
         )
 
         self.assertIn("MiniMax `MiniMax-M2.7`: usable", status)
-        self.assertIn("submission-form-draft.md", status)
-        self.assertIn("Human review of the Tether Template Wallet Application Pack", status)
+        self.assertIn("submitted and pending review", status)
+        self.assertIn("Wait for Tether's review response", status)
         self.assertIn("MiniMax `MiniMax-M2.7`: usable", smoke)
         self.assertIn("non-high-speed", smoke)
 

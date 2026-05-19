@@ -1,6 +1,6 @@
 # Human Submission Checklist
 
-Use this checklist before submitting the Tether Template Wallet application.
+Use this checklist to understand what was required before submitting the Tether Template Wallet application and what to record afterward.
 
 ## Recommended Submission Identity
 
@@ -48,14 +48,14 @@ Recommended values:
 
 ## Before Submission
 
-- [ ] Dedicated project email exists.
+- [x] Dedicated project email exists.
 - [ ] Email account has 2FA enabled.
-- [ ] GitHub project account or organization is ready.
-- [ ] Public repository decision is made.
-- [ ] `submission-form-draft.md` has been reviewed.
-- [ ] Human has reviewed Tether grant terms.
-- [ ] Human has reviewed this application pack.
-- [ ] Human understands revenue remains `0` until acceptance and payment are confirmed.
+- [x] GitHub project account or organization is ready.
+- [x] Public repository decision is made.
+- [x] `submission-form-draft.md` has been reviewed.
+- [x] Human has reviewed Tether grant terms enough to submit.
+- [x] Human has reviewed this application pack.
+- [x] Human understands revenue remains `0` until acceptance and payment are confirmed.
 
 ## After Submission
 
@@ -67,3 +67,11 @@ Record only non-secret evidence:
 - Tether response status;
 - non-confidential feedback;
 - acceptance/rejection outcome.
+
+Current public evidence:
+
+- submission date: 2026-05-20;
+- submitted opportunity: Tether.dev Template Wallet bounty;
+- public project URL: https://github.com/Mr-Tokens/make-money;
+- response status: page returned "Thank you for your application! We will review it and get back to you soon.";
+- outcome: pending review.

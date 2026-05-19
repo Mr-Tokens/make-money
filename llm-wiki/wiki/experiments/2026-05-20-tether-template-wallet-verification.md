@@ -1,6 +1,6 @@
 # Tether Template Wallet Verification
 
-Status: verified shortlist
+Status: submitted, pending review
 Date: 2026-05-20
 Related scan: [Opportunity Scan Batch 001](2026-05-20-opportunity-scan-batch-001.md)
 Raw source: [Tether Template Wallet Verification](../../raw/sources/2026-05-20-tether-template-wallet-verification.md)
@@ -8,9 +8,21 @@ Subthread: Goodall `019e41f5-aa61-7840-a39b-feb25cb2c187`
 
 ## Decision
 
-The **Tether.dev Template Wallet bounty** is the current best first execution target.
+The **Tether.dev Template Wallet bounty** is the first submitted execution target.
 
 It should be treated as a proposal-first opportunity, not as guaranteed work. The public bounty page lists `2,000 USD₮`, but Tether's own process includes application review, scope refinement, a formal bounty agreement, and deliverable acceptance before payment.
+
+## Submission Evidence
+
+The human project owner submitted the application on 2026-05-20.
+
+Returned page message:
+
+```text
+Thank you for your application! We will review it and get back to you soon.
+```
+
+Current result: pending Tether review. No bounty acceptance or revenue has been recorded.
 
 ## Why This Is First
 
@@ -48,4 +60,4 @@ Contents:
 
 ## Next Action
 
-Review [Tether Template Wallet Application Pack v0.1](../../../deliverables/tether-template-wallet-application-pack-v0.1/README.md), then ask the human to submit or confirm whether a dedicated project identity should be used for Tether contact details.
+Wait for Tether's review response. Record only non-secret updates, and prepare a scope-refinement response path in case Tether replies.
