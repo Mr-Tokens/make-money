@@ -109,6 +109,43 @@ class DelegationLibTests(unittest.TestCase):
         self.assertNotIn("sk-test-aaaaaaaa", saved)
         self.assertNotIn("tp-test-bbbbbbbb", saved)
 
+    def test_approve_and_reject_task_update_review_state(self):
+        import delegation_lib
+
+        with tempfile.TemporaryDirectory() as tmp:
+            old_tasks_dir = delegation_lib.TASKS_DIR
+            delegation_lib.TASKS_DIR = Path(tmp) / "tasks"
+            try:
+                record = {
+                    "task_id": "task-2",
+                    "created_at": "2026-05-20T00:00:00+00:00",
+                    "updated_at": "2026-05-20T00:00:00+00:00",
+                    "provider": "minimax",
+                    "model": "MiniMax-M2.7",
+                    "task_type": "summary",
+                    "title": "Review test",
+                    "input_prompt": "hello",
+                    "sources": [],
+                    "worker_output": "result",
+                    "status": "completed",
+                }
+                delegation_lib.write_task(record, "completed")
+
+                approved_path = delegation_lib.approve_task("task-2", "looks useful")
+                approved = json.loads(approved_path.read_text(encoding="utf-8"))
+
+                record["task_id"] = "task-3"
+                delegation_lib.write_task(record, "completed")
+                rejected_path = delegation_lib.reject_task("task-3", "unsupported claim")
+                rejected = json.loads(rejected_path.read_text(encoding="utf-8"))
+            finally:
+                delegation_lib.TASKS_DIR = old_tasks_dir
+
+        self.assertEqual(approved["status"], "completed")
+        self.assertEqual(approved["review"]["decision"], "approved")
+        self.assertEqual(rejected["status"], "rejected")
+        self.assertEqual(rejected["review"]["decision"], "rejected")
+
 
 if __name__ == "__main__":
     unittest.main()
