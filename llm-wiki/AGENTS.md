@@ -16,6 +16,7 @@ This folder is the project knowledge base. Future agents should treat it as the 
 - Every strategy claim that affects money, safety, or execution needs provenance in `llm-wiki/raw/manifest.md`.
 - Append meaningful project activity to `llm-wiki/wiki/log.md`.
 - Update `llm-wiki/wiki/index.md` when adding pages.
+- Follow the [Manager-First Delegation Protocol](wiki/protocols/manager-first-delegation.md): workers may draft, scan, summarize, test, and risk-check, but Codex/Sesame reviews before durable writeback.
 
 ## Safety Rules
 

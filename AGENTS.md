@@ -26,7 +26,9 @@ These rules apply to every agent and script working in this repository.
 - Commit `pyproject.toml` and `uv.lock` when dependencies change.
 - The OpenAI Agents SDK manager scaffold lives in `scripts/openai_agent_manager.py`.
 - Project-level skills live under `.agents/skills/`; Agents SDK workers should read relevant `SKILL.md` files before doing specialized work.
-- Prefer a manager-with-specialist-workers pattern for chores such as research, LLM-Wiki maintenance, code maintenance, marketing drafts, and risk checks.
+- Default to a manager-with-specialist-workers pattern for chores such as research, LLM-Wiki maintenance, code maintenance, marketing drafts, and risk checks.
+- Before doing non-sensitive execution work directly, ask whether Mimo or MiniMax can do a bounded first pass. If yes, delegate first and review the result before writeback.
+- Codex/Sesame remains responsible for strategy, final judgment, public submission, identity use, wallet/fund boundaries, secrets, and legal/KYC boundaries.
 - Active MiniMax use is limited to the non-high-speed `MiniMax-M2.7` provider.
 
 ## Git And Worktrees

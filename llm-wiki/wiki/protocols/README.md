@@ -16,3 +16,4 @@ Each page should include:
 
 - [OpenAI Agents SDK Protocol](openai-agent-sdk.md)
 - [Execution Subthreads Protocol](execution-subthreads.md)
+- [Manager-First Delegation Protocol](manager-first-delegation.md)

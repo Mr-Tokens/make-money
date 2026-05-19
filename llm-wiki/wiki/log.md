@@ -46,3 +46,6 @@
 - Drafted a local `outreach-listennotes` patch on branch `sesame/listennotes-outreach-search` with commit `8d9f5ab02437b57d135ed42bcb8ed4dafb2e4b10`.
 - Verified the `sh1pt` Listen Notes patch with TDD red/green, focused Vitest tests, package typecheck, package build, CLI typecheck, and `git diff --check`.
 - Blocked public external PR submission until GitHub CLI authentication is confirmed as the project identity.
+- User corrected the execution style: Codex/Sesame was still doing too much directly instead of assigning bounded work to Mimo and MiniMax.
+- Delegated immediate correction work: Mimo drafted a manager-first task split; MiniMax risk-checked the `sh1pt` PR submission path. Both outputs were reviewed and approved for selective integration.
+- Added the Manager-First Delegation Protocol and updated project rules so routine research, writing, scans, risk checks, and bounded test work are delegated before direct manager execution.

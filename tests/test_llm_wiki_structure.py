@@ -19,6 +19,7 @@ class LlmWikiStructureTests(unittest.TestCase):
             LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md",
             LLM_WIKI / "wiki" / "protocols" / "README.md",
             LLM_WIKI / "wiki" / "protocols" / "execution-subthreads.md",
+            LLM_WIKI / "wiki" / "protocols" / "manager-first-delegation.md",
             LLM_WIKI / "wiki" / "risks" / "README.md",
             LLM_WIKI / "wiki" / "experiments" / "README.md",
             LLM_WIKI / "wiki" / "glossaries" / "README.md",
@@ -50,6 +51,7 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("Opportunity Scan Batch 002 source bundle", manifest)
         self.assertIn("Micro Cash Scan Batch 001 source bundle", manifest)
         self.assertIn("sh1pt Listen Notes PR draft source bundle", manifest)
+        self.assertIn("Manager-first delegation correction", manifest)
 
     def test_github_readme_style_guide_protects_public_claims(self):
         style = (LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md").read_text(encoding="utf-8")
@@ -70,6 +72,19 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("Do not connect wallets", protocol)
         self.assertIn("Tether Verification", protocol)
         self.assertIn("manager integrated", protocol)
+
+    def test_manager_first_delegation_protocol_keeps_manager_out_of_chores(self):
+        protocol = (
+            LLM_WIKI / "wiki" / "protocols" / "manager-first-delegation.md"
+        ).read_text(encoding="utf-8")
+        rules = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
+
+        self.assertIn("delegate first", protocol.lower())
+        self.assertIn("Mimo", protocol)
+        self.assertIn("MiniMax", protocol)
+        self.assertIn("public submission", protocol)
+        self.assertIn("Workers may draft", protocol)
+        self.assertIn("Before doing non-sensitive execution work directly", rules)
 
     def test_root_agent_rules_allow_explicit_env_credentials_only(self):
         rules = (ROOT / "AGENTS.md").read_text(encoding="utf-8")

@@ -28,6 +28,7 @@ This is the durable knowledge map for the Make Money experiment.
 ## Active Protocol Records
 
 - [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md)
+- [Manager-First Delegation Protocol](protocols/manager-first-delegation.md)
 
 ## Active Experiment Records
 

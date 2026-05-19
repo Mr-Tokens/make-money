@@ -21,6 +21,7 @@ Date: 2026-05-20
 - Current micro-cash target: `profullstack/sh1pt` small adapter contribution. A local Listen Notes outreach adapter patch is drafted and verified, but not publicly submitted.
 - Current external-submission blocker: GitHub CLI identity must be switched to the project identity before opening issues, PRs, or comments on external repositories.
 - Active execution subthreads: [Execution Subthreads Protocol](protocols/execution-subthreads.md).
+- Active manager rule: [Manager-First Delegation Protocol](protocols/manager-first-delegation.md). Routine research, writing, scans, risk checks, and bounded test work should be delegated before Codex/Sesame implements directly.
 - Python environment: `uv` project with ignored `.venv/`, `openai-agents`, and an Agents SDK manager scaffold in `scripts/openai_agent_manager.py`.
 
 ## Credentials
@@ -35,8 +36,8 @@ The user has explicitly allowed locally using provider API credentials. Credenti
 ## Next Actions
 
 1. Switch or confirm GitHub CLI authentication for the project identity before external PR submission.
-2. Submit the local `sh1pt` Listen Notes patch only after the project identity is active.
-3. Wait for Tether's review response and record only non-secret updates.
-4. Use the Interledger sponsor questions and eligibility/AI disclosure check before any human submission.
-5. Keep [Tari bounty verification](../raw/sources/2026-05-20-tari-bounty-verification.md) as a contested backup path; do not execute unless maintainers invite more work.
-6. Gradually route routine research, wiki, code, and marketing chores through the [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md).
+2. Delegate the next Listen Notes test expansion to Mimo before changing the external worktree again.
+3. Delegate Micro Cash Scan Batch 002 to MiniMax before selecting the next target.
+4. Submit the local `sh1pt` Listen Notes patch only after the project identity is active and risk checks pass.
+5. Wait for Tether's review response and record only non-secret updates.
+6. Use the Interledger sponsor questions and eligibility/AI disclosure check before any human submission.
