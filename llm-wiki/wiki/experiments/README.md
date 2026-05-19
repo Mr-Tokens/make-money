@@ -24,3 +24,4 @@ The default budget is zero until the project has generated proceeds or the user 
 - [2026-05-20 Opportunity Scan Batch 002](2026-05-20-opportunity-scan-batch-002.md)
 - [2026-05-20 Interledger Open Payments Arazzo Verification](2026-05-20-interledger-open-payments-arazzo-verification.md)
 - [2026-05-20 Micro Cash Scan Batch 001](2026-05-20-micro-cash-scan-batch-001.md)
+- [2026-05-20 sh1pt Listen Notes PR Draft](2026-05-20-sh1pt-listennotes-pr-draft.md)

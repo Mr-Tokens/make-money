@@ -49,6 +49,7 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("Tether Template Wallet submission confirmation", manifest)
         self.assertIn("Opportunity Scan Batch 002 source bundle", manifest)
         self.assertIn("Micro Cash Scan Batch 001 source bundle", manifest)
+        self.assertIn("sh1pt Listen Notes PR draft source bundle", manifest)
 
     def test_github_readme_style_guide_protects_public_claims(self):
         style = (LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md").read_text(encoding="utf-8")
@@ -120,6 +121,19 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("No submission yet", batch)
         self.assertIn("Revenue remains `0`", batch)
         self.assertIn("Superteam Earn FAQ", source)
+
+    def test_sh1pt_listennotes_pr_draft_records_submission_blocker(self):
+        draft = (
+            LLM_WIKI / "wiki" / "experiments" / "2026-05-20-sh1pt-listennotes-pr-draft.md"
+        ).read_text(encoding="utf-8")
+        status = (LLM_WIKI / "wiki" / "current-status.md").read_text(encoding="utf-8")
+
+        self.assertIn("8d9f5ab02437b57d135ed42bcb8ed4dafb2e4b10", draft)
+        self.assertIn("packages/outreach/listennotes", draft)
+        self.assertIn("Not submitted", draft)
+        self.assertIn("GitHub CLI account", draft)
+        self.assertIn("Revenue remains `0`", draft)
+        self.assertIn("project identity", status)
 
 
 if __name__ == "__main__":

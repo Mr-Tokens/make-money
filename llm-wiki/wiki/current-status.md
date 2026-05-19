@@ -13,12 +13,13 @@ Date: 2026-05-20
 - Marketing system: focused skills installed under `.agents/skills/`, with canonical context in `.agents/product-marketing.md`.
 - Active first strategy: [Web3 Builder Reputation Sprint](strategies/2026-05-20-web3-builder-reputation-sprint.md).
 - Active small-cash strategy: [Micro Cash Sprint](strategies/2026-05-20-micro-cash-sprint.md), targeting 5-20 USDT/USDC-equivalent.
-- Latest experiment: [Micro Cash Scan Batch 001](experiments/2026-05-20-micro-cash-scan-batch-001.md).
+- Latest experiment: [sh1pt Listen Notes PR Draft](experiments/2026-05-20-sh1pt-listennotes-pr-draft.md).
 - First execution target: [Tether Template Wallet Verification](experiments/2026-05-20-tether-template-wallet-verification.md), submitted and pending review.
 - First deliverable package: [Tether Template Wallet Application Pack v0.1](../../deliverables/tether-template-wallet-application-pack-v0.1/README.md), used for the submitted application.
 - Second execution target: [Interledger Open Payments Arazzo Verification](experiments/2026-05-20-interledger-open-payments-arazzo-verification.md), proposal package prepared and not submitted.
 - Second deliverable package: [Interledger Open Payments Arazzo Application Pack v0.1](../../deliverables/interledger-open-payments-arazzo-pack-v0.1/README.md).
-- Current micro-cash target: inspect `profullstack/sh1pt#133` for a smallest useful PR path. No micro-cash submission or payment has been recorded.
+- Current micro-cash target: `profullstack/sh1pt` small adapter contribution. A local Listen Notes outreach adapter patch is drafted and verified, but not publicly submitted.
+- Current external-submission blocker: GitHub CLI identity must be switched to the project identity before opening issues, PRs, or comments on external repositories.
 - Active execution subthreads: [Execution Subthreads Protocol](protocols/execution-subthreads.md).
 - Python environment: `uv` project with ignored `.venv/`, `openai-agents`, and an Agents SDK manager scaffold in `scripts/openai_agent_manager.py`.
 
@@ -33,9 +34,9 @@ The user has explicitly allowed locally using provider API credentials. Credenti
 
 ## Next Actions
 
-1. Inspect the `profullstack/sh1pt#133` repository, docs, tests, and issue expectations before any PR work.
-2. Wait for Tether's review response and record only non-secret updates.
-3. Use the Interledger sponsor questions and eligibility/AI disclosure check before any human submission.
-4. Keep [Tari bounty verification](../raw/sources/2026-05-20-tari-bounty-verification.md) as a contested backup path; do not execute unless maintainers invite more work.
-5. Gradually route routine research, wiki, code, and marketing chores through the [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md).
-6. Draft the first build-in-public post about the first real submission without implying acceptance or revenue.
+1. Switch or confirm GitHub CLI authentication for the project identity before external PR submission.
+2. Submit the local `sh1pt` Listen Notes patch only after the project identity is active.
+3. Wait for Tether's review response and record only non-secret updates.
+4. Use the Interledger sponsor questions and eligibility/AI disclosure check before any human submission.
+5. Keep [Tari bounty verification](../raw/sources/2026-05-20-tari-bounty-verification.md) as a contested backup path; do not execute unless maintainers invite more work.
+6. Gradually route routine research, wiki, code, and marketing chores through the [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md).

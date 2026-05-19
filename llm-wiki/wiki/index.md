@@ -37,6 +37,7 @@ This is the durable knowledge map for the Make Money experiment.
 - [Opportunity Scan Batch 002](experiments/2026-05-20-opportunity-scan-batch-002.md)
 - [Interledger Open Payments Arazzo Verification](experiments/2026-05-20-interledger-open-payments-arazzo-verification.md)
 - [Micro Cash Scan Batch 001](experiments/2026-05-20-micro-cash-scan-batch-001.md)
+- [sh1pt Listen Notes PR Draft](experiments/2026-05-20-sh1pt-listennotes-pr-draft.md)
 
 ## Initial Direction
 
