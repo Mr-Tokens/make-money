@@ -6,7 +6,7 @@ Use this checklist before submitting the Tether Template Wallet application.
 
 Use a project identity where possible:
 
-- Applicant/project name: `Make Money`
+- Applicant/project name: `Mr.Tokens`
 - Public project role: zero-capital AI-agent-operated public work experiment
 - Public repository: pending
 - Public proof: LLM-Wiki and application pack

@@ -33,6 +33,9 @@ class DeliverableTests(unittest.TestCase):
         self.assertIn("No automated system handles funds", combined)
         self.assertIn("Dedicated project email", combined)
         self.assertIn("Human legal name if required", combined)
+        self.assertIn("Mr.Tokens", combined)
+        private_email = "mr.tokens" + "@" + "qq.com"
+        self.assertNotIn(private_email, combined)
         self.assertNotIn("guaranteed", combined.lower())
         self.assertNotIn("risk-free", combined.lower())
 
