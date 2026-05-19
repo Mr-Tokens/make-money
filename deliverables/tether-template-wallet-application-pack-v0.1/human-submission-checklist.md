@@ -8,7 +8,7 @@ Use a project identity where possible:
 
 - Applicant/project name: `Mr.Tokens`
 - Public project role: zero-capital AI-agent-operated public work experiment
-- Public repository: pending
+- Public repository: https://github.com/Mr-Tokens/make-money
 - Public proof: LLM-Wiki and application pack
 
 If Tether requires a legal person, real human identity, KYC, or agreement signature, that step must be completed by the human project owner or an authorized human representative.

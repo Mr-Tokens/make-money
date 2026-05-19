@@ -4,7 +4,7 @@ Date: 2026-05-20
 
 ## Project State
 
-- Repository: initialized on `master`.
+- Repository: published at https://github.com/Mr-Tokens/make-money on `master`.
 - LLM-Wiki: initial skeleton created.
 - Delegation Agent: implemented as local scripts under `scripts/` and `delegation/`.
 - Wallets: public addresses recorded in `llm-wiki/wallets.md`.
