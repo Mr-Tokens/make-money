@@ -13,6 +13,7 @@ This is the durable knowledge map for the Make Money experiment.
 
 - [Strategies](strategies/README.md)
 - [Marketing](marketing/README.md)
+  - [GitHub README Style Guide](marketing/github-readme-style.md)
 - [Templates](templates/README.md)
 - [Protocols](protocols/README.md)
 - [Risks](risks/README.md)

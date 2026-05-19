@@ -16,6 +16,7 @@ class LlmWikiStructureTests(unittest.TestCase):
             LLM_WIKI / "wiki" / "log.md",
             LLM_WIKI / "wiki" / "current-status.md",
             LLM_WIKI / "wiki" / "strategies" / "README.md",
+            LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md",
             LLM_WIKI / "wiki" / "protocols" / "README.md",
             LLM_WIKI / "wiki" / "risks" / "README.md",
             LLM_WIKI / "wiki" / "experiments" / "README.md",
@@ -43,6 +44,16 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("MiniMax model docs", manifest)
         self.assertIn("Mimo platform docs", manifest)
         self.assertIn("OpenAI Agents docs", manifest)
+        self.assertIn("GitHub Trending README style references", manifest)
+
+    def test_github_readme_style_guide_protects_public_claims(self):
+        style = (LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md").read_text(encoding="utf-8")
+
+        self.assertIn("Current status and revenue", style)
+        self.assertIn("evidence", style.lower())
+        self.assertIn("not an investment", style.lower())
+        self.assertIn("public wallet addresses", style.lower())
+        self.assertNotIn("highest authority observer", style)
 
     def test_root_agent_rules_allow_explicit_env_credentials_only(self):
         rules = (ROOT / "AGENTS.md").read_text(encoding="utf-8")

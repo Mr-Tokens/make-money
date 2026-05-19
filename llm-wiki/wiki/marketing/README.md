@@ -12,6 +12,7 @@ Marketing is part of the Make Money experiment. The project should not only try 
 - Product marketing context: `.agents/product-marketing.md`
 - Installed marketing skills: `.agents/skills/`
 - Raw source note: `llm-wiki/raw/sources/2026-05-20-skills-sh-marketing-skills.md`
+- GitHub README style guide: [GitHub README Style Guide](github-readme-style.md)
 
 Agents should read the product marketing context before writing public positioning, launch plans, social drafts, AI SEO notes, community plans, or free-tool proposals.
 
@@ -76,3 +77,4 @@ The answer must be earned through evidence. Until revenue exists, the strongest 
 | Opportunity Scorecard template | Reusable free tool / internal filter | Created |
 | Build-in-public launch thread draft | Introduce the experiment once first strategy page is complete | Planned |
 | First submission postmortem | Convert first real attempt into proof and learning | Pending first submission |
+| GitHub README style guide | Give Mimo README polish tasks a source-backed public README style reference | Created |
