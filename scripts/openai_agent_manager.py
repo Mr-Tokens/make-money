@@ -146,7 +146,7 @@ Project boundaries:
 - Durable knowledge belongs in `llm-wiki/`; raw sources belong under `llm-wiki/raw/` when practical.
 - Test-created runtime artifacts belong under `tests/artifacts/`.
 - Python `__pycache__` directories are acceptable if ignored by git.
-- Secrets belong only in ignored local files such as `.env` or `secret.md/`.
+- Secrets belong only in ignored local files such as `.env` or `secret/`.
 - You must not connect wallets, sign transactions, submit transactions, move funds, request private keys, or request seed phrases.
 - Public claims must point to source notes, wiki pages, submissions, artifacts, or wallet evidence.
 - Keep the repository tidy: prefer small committed files, ignored runtime output, and no root-level scratch files.
@@ -283,7 +283,7 @@ def _resolve_safe_sandbox_path(path: Path) -> Path:
     root = ROOT.resolve()
     if not resolved.is_relative_to(root):
         raise ValueError(f"Sandbox path escapes project root: {path}")
-    forbidden_names = {".env", "secret.md", ".venv"}
+    forbidden_names = {".env", "secret", ".venv"}
     if any(part in forbidden_names for part in resolved.relative_to(root).parts):
         raise ValueError(f"Sandbox path exposes local-only secret/runtime state: {path}")
     return resolved

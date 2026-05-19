@@ -132,7 +132,7 @@ class OpenAIAgentManagerTests(unittest.TestCase):
             relative_parts = set(resolved.relative_to(root).parts)
             self.assertNotEqual(resolved, root)
             self.assertNotIn(".env", relative_parts)
-            self.assertNotIn("secret.md", relative_parts)
+            self.assertNotIn("secret", relative_parts)
             self.assertNotIn(".venv", relative_parts)
 
 

@@ -2,8 +2,7 @@
 .env
 .env.*
 !.env.example
-/secret.md
-/secret.md/
+/secret/
 
 # Local runtime output
 logs/

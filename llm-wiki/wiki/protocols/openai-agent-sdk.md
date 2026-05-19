@@ -63,11 +63,11 @@ Rule: read the relevant `SKILL.md` before applying a skill. The ordinary manager
 - For OpenAI-compatible non-OpenAI endpoints, set `OPENAI_AGENTS_DEFAULT_API=chat_completions` when the provider does not support Responses.
 - Agents must not connect wallets, request private keys, sign transactions, submit transactions, or move funds.
 - Worker output requires manager review before durable wiki writeback.
-- Sandbox Agents must not mount the whole repository. Use the safe source whitelist, which excludes `.env`, `secret.md/`, `.venv/`, and the project root itself.
+- Sandbox Agents must not mount the whole repository. Use the safe source whitelist, which excludes `.env`, `secret/`, `.venv/`, and the project root itself.
 
 ## Cleanliness Rules
 
-- `.venv/`, `.env`, ignored task JSON, `secret.md/`, and Python caches stay untracked.
+- `.venv/`, `.env`, ignored task JSON, `secret/`, and Python caches stay untracked.
 - `scripts/__pycache__/` is acceptable local cache noise and is ignored.
 - Do not create root-level scratch files.
 - Test runtime output belongs under `tests/artifacts/`.
