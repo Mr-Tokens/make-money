@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "tests"))
+sys.dont_write_bytecode = True
 from test_paths import make_artifact_dir, remove_artifact_dir
 
 import delegation_lib
@@ -39,6 +40,7 @@ class ReviewTaskCliTests(unittest.TestCase):
             delegation_lib.TASKS_DIR = old_tasks_dir
         env = os.environ.copy()
         env["DELEGATION_TASKS_DIR"] = str(task_dir)
+        env["PYTHONDONTWRITEBYTECODE"] = "1"
 
         result = subprocess.run(
             [

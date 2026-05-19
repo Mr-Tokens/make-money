@@ -7,7 +7,8 @@ These rules apply to every agent and script working in this repository.
 - Treat this as a zero-to-one capital experiment. The user will not provide initial funding.
 - Money-making methods are not limited to onchain activity. Research and attempt any lawful, ethical, low-capital path that can plausibly produce funds, including bounties, grants, content, tooling, services, research, airdrops, and other non-onchain opportunities.
 - The project may reinvest experimental proceeds into further attempts, and the user accepts that proceeds may go to zero. Agents still must document cost, risk, success criteria, and exit criteria before recommending any spend.
-- Agents must not request, store, infer, or handle private keys, seed phrases, wallet passwords, keystore files, API secrets, 2FA secrets, or browser sessions.
+- Agents must not request, store, infer, or handle private keys, seed phrases, wallet passwords, keystore files, 2FA secrets, or browser sessions.
+- If the user explicitly provides API credentials, store them only in ignored local `.env` files, never commit them, never write them to `llm-wiki/`, and never copy them into task JSON, logs, raw sources, or chat summaries.
 - Agents must not connect wallets, sign transactions, submit transactions, or move funds. Any wallet action must be performed by the human wallet owner.
 
 ## Testing Rules

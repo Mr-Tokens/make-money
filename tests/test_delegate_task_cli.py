@@ -19,6 +19,7 @@ class DelegateTaskCliTests(unittest.TestCase):
         before = set(PENDING_DIR.glob("*.json"))
         env = os.environ.copy()
         env["DELEGATION_TASKS_DIR"] = str(task_dir)
+        env["PYTHONDONTWRITEBYTECODE"] = "1"
 
         result = subprocess.run(
             [
