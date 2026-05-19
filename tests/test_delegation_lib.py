@@ -80,6 +80,35 @@ class DelegationLibTests(unittest.TestCase):
         self.assertEqual(provider["api_key"], "local-key")
         self.assertEqual(provider["model"], "mimo-v2.5-pro")
 
+    def test_write_task_redacts_prompt_and_sources(self):
+        import delegation_lib
+
+        with tempfile.TemporaryDirectory() as tmp:
+            old_tasks_dir = delegation_lib.TASKS_DIR
+            delegation_lib.TASKS_DIR = Path(tmp) / "tasks"
+            try:
+                record = {
+                    "task_id": "task-1",
+                    "created_at": "2026-05-20T00:00:00+00:00",
+                    "updated_at": "2026-05-20T00:00:00+00:00",
+                    "provider": "mimo",
+                    "model": "mimo-v2.5-pro",
+                    "task_type": "research",
+                    "title": "Secret test",
+                    "input_prompt": "token sk-test-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sources": ["api-key: tp-test-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"],
+                    "status": "pending",
+                }
+
+                path = delegation_lib.write_task(record, "pending")
+                saved = path.read_text(encoding="utf-8")
+            finally:
+                delegation_lib.TASKS_DIR = old_tasks_dir
+
+        self.assertIn("[REDACTED_TOKEN]", saved)
+        self.assertNotIn("sk-test-aaaaaaaa", saved)
+        self.assertNotIn("tp-test-bbbbbbbb", saved)
+
 
 if __name__ == "__main__":
     unittest.main()
