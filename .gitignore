@@ -7,6 +7,7 @@
 logs/
 tmp/
 .cache/
+.worktrees/
 
 # Python
 __pycache__/
