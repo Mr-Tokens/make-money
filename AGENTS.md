@@ -29,3 +29,10 @@ These rules apply to every agent and script working in this repository.
 - Durable project knowledge belongs in `llm-wiki/` once that knowledge base exists.
 - Raw sources should be saved under `llm-wiki/raw/` when practical and allowed.
 - Strategy conclusions must be source-backed, risk-aware, and written so future agents can audit them.
+
+## Marketing And Public Claims
+
+- Use `.agents/product-marketing.md` as the canonical marketing context before creating positioning, launch, content, social, community, AI SEO, or free-tool plans.
+- Project-installed marketing skills live under `.agents/skills/`; keep the installed set focused and explain additions in `llm-wiki/`.
+- Treat marketing as part of the experiment, not decoration. Each public-facing claim should point back to a wiki page, source note, artifact, submission, transaction, or other auditable evidence.
+- Social or community posts may be drafted by agents, but posting from human-owned accounts must remain a human action unless the user explicitly sets up a dedicated project account and grants safe posting access.

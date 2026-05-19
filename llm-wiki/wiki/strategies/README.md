@@ -23,3 +23,7 @@ Each strategy should include:
 - Airdrop and testnet research with strict risk filters.
 - Public-wallet hygiene and reputation-building tasks.
 - Tooling or content products that can generate outside income.
+
+## Active Strategies
+
+- [Web3 Builder Reputation Sprint](2026-05-20-web3-builder-reputation-sprint.md)

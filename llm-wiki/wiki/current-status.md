@@ -10,6 +10,8 @@ Date: 2026-05-20
 - Wallets: public addresses recorded in `llm-wiki/wallets.md`.
 - Initial capital: zero.
 - Strategy scope: any lawful, ethical, low-capital path, not limited to onchain activity.
+- Marketing system: focused skills installed under `.agents/skills/`, with canonical context in `.agents/product-marketing.md`.
+- Active first strategy: [Web3 Builder Reputation Sprint](strategies/2026-05-20-web3-builder-reputation-sprint.md).
 
 ## Credentials
 
@@ -23,6 +25,7 @@ The user has explicitly allowed locally using provider API credentials. Credenti
 ## Next Actions
 
 1. Retry MiniMax after the provider reset time.
-2. Create the first zero-capital strategy pages.
-3. Use Mimo to scan for bounties, grants, and airdrop/testnet opportunities.
-4. Record every durable finding in this wiki.
+2. Create the Opportunity Scorecard template for the sprint.
+3. Use Mimo to scan for at least 10 bounties, grants, hackathons, and public-good contribution opportunities.
+4. Rank the top 3 candidates and choose the first no-capital deliverable.
+5. Draft the first build-in-public post only after the strategy page and scorecard are ready.

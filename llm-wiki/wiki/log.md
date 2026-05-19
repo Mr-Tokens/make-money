@@ -10,3 +10,6 @@
 - Created the initial LLM-Wiki skeleton, raw manifest, source notes, index, and current status page.
 - Configured local provider credentials in ignored `.env`.
 - Ran provider smoke tests: Mimo is usable; MiniMax fast provider returned HTTP 429 due to provider-side usage window exhaustion until `2026-05-20T05:00:00+08:00`.
+- Configured focused project marketing skills through `skills.sh`: product marketing, content strategy, social, launch, AI SEO, free tools, and community marketing.
+- Added `.agents/product-marketing.md` as the canonical marketing context for future agents.
+- Added the Marketing Operating System page and activated the Web3 Builder Reputation Sprint as the first zero-capital strategy.

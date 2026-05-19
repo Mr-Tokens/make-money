@@ -12,10 +12,15 @@ This is the durable knowledge map for the Make Money experiment.
 ## Sections
 
 - [Strategies](strategies/README.md)
+- [Marketing](marketing/README.md)
 - [Protocols](protocols/README.md)
 - [Risks](risks/README.md)
 - [Experiments](experiments/README.md)
 - [Glossaries](glossaries/README.md)
+
+## Active Strategy Records
+
+- [Web3 Builder Reputation Sprint](strategies/2026-05-20-web3-builder-reputation-sprint.md)
 
 ## Active Experiment Records
 
