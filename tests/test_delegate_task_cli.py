@@ -1,16 +1,24 @@
 import json
+import os
 import subprocess
 import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tests"))
 PENDING_DIR = ROOT / "delegation" / "tasks" / "pending"
+from test_paths import make_artifact_dir, remove_artifact_dir
 
 
 class DelegateTaskCliTests(unittest.TestCase):
     def test_dry_run_creates_pending_task_without_api_key(self):
+        artifact_dir = make_artifact_dir("delegate-cli-")
+        self.addCleanup(remove_artifact_dir, artifact_dir)
+        task_dir = artifact_dir / "tasks"
         before = set(PENDING_DIR.glob("*.json"))
+        env = os.environ.copy()
+        env["DELEGATION_TASKS_DIR"] = str(task_dir)
 
         result = subprocess.run(
             [
@@ -29,15 +37,15 @@ class DelegateTaskCliTests(unittest.TestCase):
             cwd=ROOT,
             capture_output=True,
             text=True,
+            env=env,
         )
 
         after = set(PENDING_DIR.glob("*.json"))
-        created = list(after - before)
-        for path in created:
-            self.addCleanup(path.unlink)
+        created = list((task_dir / "pending").glob("*.json"))
 
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("Dry run task saved:", result.stdout)
+        self.assertEqual(after, before)
         self.assertEqual(len(created), 1)
 
         record = json.loads(created[0].read_text(encoding="utf-8"))

@@ -11,7 +11,7 @@ from urllib import error, request
 
 ROOT = Path(__file__).resolve().parents[1]
 DELEGATION_DIR = ROOT / "delegation"
-TASKS_DIR = DELEGATION_DIR / "tasks"
+TASKS_DIR = Path(os.environ.get("DELEGATION_TASKS_DIR", str(DELEGATION_DIR / "tasks")))
 PROMPTS_DIR = DELEGATION_DIR / "prompts"
 PROVIDERS_PATH = DELEGATION_DIR / "providers.example.json"
 ENV_PATH = ROOT / ".env"

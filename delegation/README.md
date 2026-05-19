@@ -10,6 +10,7 @@ This directory contains the lightweight local task delegation layer for the Make
 - Worker models may research, summarize, and risk-check.
 - Worker models must not connect wallets, sign transactions, prepare transactions, or write directly to `llm-wiki/`.
 - Approved task output still needs strategy-lead review before wiki writeback.
+- Tests must write runtime artifacts only under `tests/artifacts/`.
 
 ## Setup
 
