@@ -29,3 +29,4 @@
 - Added Sesame (芝麻), a cute Chinese domestic cat in an astronaut helmet, as the public project mascot image.
 - Updated public README language to credit the manager/worker model split across Codex, Mimo, and MiniMax.
 - Replaced the full-size README mascot image with a centered avatar and gave Sesame a livelier cat-food-fund introduction.
+- Updated README voice so Sesame is the public role name, working toward better cat food while clearly disclaiming any guarantee of profit.
