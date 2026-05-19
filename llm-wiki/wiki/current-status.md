@@ -13,6 +13,8 @@ Date: 2026-05-20
 - Marketing system: focused skills installed under `.agents/skills/`, with canonical context in `.agents/product-marketing.md`.
 - Active first strategy: [Web3 Builder Reputation Sprint](strategies/2026-05-20-web3-builder-reputation-sprint.md).
 - Latest experiment: [Opportunity Scan Batch 001](experiments/2026-05-20-opportunity-scan-batch-001.md).
+- First execution target: [Tether Template Wallet Verification](experiments/2026-05-20-tether-template-wallet-verification.md).
+- Active execution subthreads: [Execution Subthreads Protocol](protocols/execution-subthreads.md).
 - Python environment: `uv` project with ignored `.venv/`, `openai-agents`, and an Agents SDK manager scaffold in `scripts/openai_agent_manager.py`.
 
 ## Credentials
@@ -27,9 +29,9 @@ The user has explicitly allowed locally using provider API credentials. Credenti
 ## Next Actions
 
 1. Run a MiniMax non-high-speed smoke test with `MiniMax-M2.7`.
-2. Verify Tether.dev grant/bounty details and identify one no-capital docs/tutorial/onboarding deliverable.
-3. Verify Tari active bounty issues as a backup GitHub PR path.
-4. Use Web3Grants as a research multiplier for the second scan batch.
+2. Draft Tether Template Wallet Application Pack v0.1.
+3. Keep [Tari bounty verification](../raw/sources/2026-05-20-tari-bounty-verification.md) as a contested backup path; do not execute unless maintainers invite more work.
+4. Use [Web3Grants verification](../raw/sources/2026-05-20-web3grants-verification.md) as a research multiplier for the second scan batch.
 5. Choose the first no-capital deliverable.
 6. Gradually route routine research, wiki, code, and marketing chores through the [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md).
 7. Draft the first build-in-public post only after a first deliverable target is chosen.

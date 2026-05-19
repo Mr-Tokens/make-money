@@ -15,3 +15,4 @@ Each page should include:
 ## Active Protocols
 
 - [OpenAI Agents SDK Protocol](openai-agent-sdk.md)
+- [Execution Subthreads Protocol](execution-subthreads.md)

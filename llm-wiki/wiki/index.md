@@ -32,6 +32,7 @@ This is the durable knowledge map for the Make Money experiment.
 
 - [Provider Smoke Test](experiments/2026-05-20-provider-smoke.md)
 - [Opportunity Scan Batch 001](experiments/2026-05-20-opportunity-scan-batch-001.md)
+- [Tether Template Wallet Verification](experiments/2026-05-20-tether-template-wallet-verification.md)
 
 ## Initial Direction
 

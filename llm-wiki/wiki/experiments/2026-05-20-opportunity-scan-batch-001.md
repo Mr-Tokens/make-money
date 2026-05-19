@@ -45,9 +45,9 @@ Find at least 10 current no-capital earning opportunities that fit the Make Mone
    - Next verification: inspect current application form, task requirements, terms, payout/KYC requirements, and whether a public artifact can be prepared before human submission.
 
 2. **Tari bounty program**
-   - Fit: strong GitHub-public contribution backup.
+   - Fit: GitHub-public contribution backup, now marked contested.
    - Smallest useful deliverable: one small documentation/test/code PR against a confirmed open bounty issue.
-   - Next verification: inspect active issues, claim process, bounty size, XTM value/liquidity, and maintainer confirmation requirements.
+   - Verification result: [Tari Bounty Verification](../../raw/sources/2026-05-20-tari-bounty-verification.md) found a possible docs issue, but it already has competing PRs and should not be executed before maintainer confirmation.
 
 3. **Web3Grants database**
    - Fit: research multiplier, not direct revenue.

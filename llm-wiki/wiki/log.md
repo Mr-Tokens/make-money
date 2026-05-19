@@ -21,3 +21,5 @@
 - Updated active MiniMax policy to use only non-high-speed `MiniMax-M2.7`.
 - Added a reusable `writing` worker type and used Mimo to polish the owner-facing README into a lighter, less internal style.
 - Ran Mimo research worker for Opportunity Scan Batch 001, reviewed 15 candidates, and shortlisted Tether.dev, Tari bounties, and Web3Grants as the first top 3 for manager verification.
+- Started execution subthreads for Tether, Tari, and Web3Grants verification; Tether subthread identified the official Tether.dev Template Wallet bounty as the first proposal target.
+- Integrated Web3Grants and Tari subthread outputs: Web3Grants is useful for Batch 002 discovery, while Tari #3111 is a contested backup and should not be executed without maintainer confirmation.

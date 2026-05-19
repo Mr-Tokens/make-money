@@ -18,6 +18,7 @@ class LlmWikiStructureTests(unittest.TestCase):
             LLM_WIKI / "wiki" / "strategies" / "README.md",
             LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md",
             LLM_WIKI / "wiki" / "protocols" / "README.md",
+            LLM_WIKI / "wiki" / "protocols" / "execution-subthreads.md",
             LLM_WIKI / "wiki" / "risks" / "README.md",
             LLM_WIKI / "wiki" / "experiments" / "README.md",
             LLM_WIKI / "wiki" / "glossaries" / "README.md",
@@ -54,6 +55,17 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("not an investment", style.lower())
         self.assertIn("public wallet addresses", style.lower())
         self.assertNotIn("highest authority observer", style)
+
+    def test_execution_subthreads_protocol_keeps_safety_boundaries(self):
+        protocol = (LLM_WIKI / "wiki" / "protocols" / "execution-subthreads.md").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn("main thread remains responsible", protocol.lower())
+        self.assertIn("Do not request or handle secrets", protocol)
+        self.assertIn("Do not connect wallets", protocol)
+        self.assertIn("Tether Verification", protocol)
+        self.assertIn("manager integrated", protocol)
 
     def test_root_agent_rules_allow_explicit_env_credentials_only(self):
         rules = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
