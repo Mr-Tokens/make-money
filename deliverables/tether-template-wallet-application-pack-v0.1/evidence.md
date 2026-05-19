@@ -26,3 +26,7 @@ Bounty application: not submitted
 Bounty acceptance: none
 Revenue: 0
 ```
+
+## 2026-05-20 Recheck
+
+The Template Wallet page still showed the visible `2,000 USD₮` amount, the `24/03/2026` date, the framework gap statement, and form fields for full name, email address, website, relevant experience, and terms agreement. The terms page still showed `Last updated April 1, 2026` and preserved the human-only legal review concerns around eligibility, due diligence/KYC, written agreement, non-confidential application materials, and no guarantee of acceptance or economic benefit.

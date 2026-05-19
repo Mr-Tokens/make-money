@@ -16,18 +16,21 @@ Small API smoke-test calls. No wallet funds.
 2. Ran an initial MiniMax high-speed provider smoke task through `scripts/delegate_task.py`.
 3. Ran a Mimo smoke task through `scripts/delegate_task.py`.
 4. Re-ran Mimo with a higher output cap after the first response used its budget mostly on reasoning tokens.
+5. Ran a MiniMax non-high-speed smoke task with `MiniMax-M2.7`.
+6. Reviewed and approved the completed MiniMax smoke task because it confirmed bounded task receipt without exposing sensitive material.
 
 ## Result
 
 - Mimo `mimo-v2.5-pro`: usable. A completed task produced the summary line "Mimo worker is connected."
 - The initial MiniMax high-speed provider path was blocked by provider-side rate limit. That path is now historical only.
+- MiniMax `MiniMax-M2.7`: usable through the active non-high-speed provider policy. The smoke output confirmed that it can receive bounded Make Money tasks.
 
 ## Lessons Learned
 
 - Mimo can be used now for bounded worker tasks.
 - Mimo may spend a meaningful share of small output limits on reasoning tokens, so practical smoke and research calls should use a less tiny output cap.
 - Active MiniMax work should use only the non-high-speed `MiniMax-M2.7` provider.
-- MiniMax non-high-speed should receive its own smoke test before being marked usable.
+- MiniMax output may include reasoning tags in the response body, so public writeback still needs manager review and cleanup before it enters tracked files.
 - Provider credentials must remain local-only in `.env` and must not be copied into raw sources, wiki pages, task JSON committed to git, or logs.
 
 ## Related Files

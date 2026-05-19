@@ -12,9 +12,9 @@ Date: 2026-05-20
 - Strategy scope: any lawful, ethical, low-capital path, not limited to onchain activity.
 - Marketing system: focused skills installed under `.agents/skills/`, with canonical context in `.agents/product-marketing.md`.
 - Active first strategy: [Web3 Builder Reputation Sprint](strategies/2026-05-20-web3-builder-reputation-sprint.md).
-- Latest experiment: [Opportunity Scan Batch 001](experiments/2026-05-20-opportunity-scan-batch-001.md).
+- Latest experiment: [Provider Smoke Test](experiments/2026-05-20-provider-smoke.md).
 - First execution target: [Tether Template Wallet Verification](experiments/2026-05-20-tether-template-wallet-verification.md).
-- First deliverable package: [Tether Template Wallet Application Pack v0.1](../../deliverables/tether-template-wallet-application-pack-v0.1/README.md).
+- First deliverable package: [Tether Template Wallet Application Pack v0.1](../../deliverables/tether-template-wallet-application-pack-v0.1/README.md), now including a public-safe submission form draft.
 - Active execution subthreads: [Execution Subthreads Protocol](protocols/execution-subthreads.md).
 - Python environment: `uv` project with ignored `.venv/`, `openai-agents`, and an Agents SDK manager scaffold in `scripts/openai_agent_manager.py`.
 
@@ -25,14 +25,15 @@ The user has explicitly allowed locally using provider API credentials. Credenti
 ## Worker Providers
 
 - Mimo `mimo-v2.5-pro`: usable through the local Delegation Agent.
-- MiniMax `MiniMax-M2.7`: active MiniMax provider policy uses only the non-high-speed model. It still needs a non-high-speed smoke test.
+- MiniMax `MiniMax-M2.7`: usable through the local Delegation Agent under the non-high-speed-only policy. Its output may include reasoning tags, so public writeback requires manager cleanup.
 
 ## Next Actions
 
-1. Run a MiniMax non-high-speed smoke test with `MiniMax-M2.7`.
-2. Review the Tether Template Wallet Application Pack v0.1 for human submission.
-3. Decide whether to use a dedicated project identity or a human personal identity for Tether contact fields.
-4. Keep [Tari bounty verification](../raw/sources/2026-05-20-tari-bounty-verification.md) as a contested backup path; do not execute unless maintainers invite more work.
-5. Use [Web3Grants verification](../raw/sources/2026-05-20-web3grants-verification.md) as a research multiplier for the second scan batch.
-6. Gradually route routine research, wiki, code, and marketing chores through the [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md).
-7. Draft the first build-in-public post only after a first deliverable target is chosen.
+1. Human review of the Tether Template Wallet Application Pack v0.1 and `submission-form-draft.md`.
+2. Human decides whether Tether can receive the project representative identity or requires legal-name submission.
+3. Human submits the Tether form if terms, eligibility, and risk boundaries are acceptable.
+4. Record the submission date and non-secret evidence if the form is submitted.
+5. Keep [Tari bounty verification](../raw/sources/2026-05-20-tari-bounty-verification.md) as a contested backup path; do not execute unless maintainers invite more work.
+6. Use [Web3Grants verification](../raw/sources/2026-05-20-web3grants-verification.md) as a research multiplier for the second scan batch.
+7. Gradually route routine research, wiki, code, and marketing chores through the [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md).
+8. Draft the first build-in-public post after either the Tether application is submitted or the project intentionally chooses the next target.

@@ -30,3 +30,7 @@
 - Updated public README language to credit the manager/worker model split across Codex, Mimo, and MiniMax.
 - Replaced the full-size README mascot image with a centered avatar and gave Sesame a livelier cat-food-fund introduction.
 - Updated README voice so Sesame is the public role name, working toward better cat food while clearly disclaiming any guarantee of profit.
+- Refined README copy from internal identity explanation into a more reader-facing zero-capital/cat-food-money narrative.
+- Rechecked the Tether Template Wallet bounty page and grant terms before moving the application pack toward submission review.
+- Ran and approved the MiniMax non-high-speed `MiniMax-M2.7` smoke task; both configured worker providers are now usable.
+- Added a public-safe Tether `submission-form-draft.md` while keeping contact email and legal identity details out of tracked files.

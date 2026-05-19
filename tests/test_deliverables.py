@@ -16,6 +16,7 @@ class DeliverableTests(unittest.TestCase):
             "repo-readme-outline.md",
             "evidence.md",
             "human-submission-checklist.md",
+            "submission-form-draft.md",
         ]
 
         missing = [name for name in required if not (PACK / name).exists()]
@@ -28,6 +29,9 @@ class DeliverableTests(unittest.TestCase):
         self.assertIn("Bounty application: not submitted", combined)
         self.assertIn("Bounty acceptance: none", combined)
         self.assertIn("Revenue: 0", combined)
+        self.assertIn("ready for human submission review", combined)
+        self.assertIn("Relevant Experience Draft", combined)
+        self.assertIn("https://github.com/Mr-Tokens/make-money", combined)
         self.assertIn("Do not paste private credentials", combined)
         self.assertIn("Do not claim a bounty is earned or awarded", combined)
         self.assertIn("No automated system handles funds", combined)

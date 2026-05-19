@@ -74,6 +74,18 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn(".env", rules)
         self.assertIn("never commit", rules.lower())
 
+    def test_current_status_tracks_worker_and_submission_state(self):
+        status = (LLM_WIKI / "wiki" / "current-status.md").read_text(encoding="utf-8")
+        smoke = (LLM_WIKI / "wiki" / "experiments" / "2026-05-20-provider-smoke.md").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn("MiniMax `MiniMax-M2.7`: usable", status)
+        self.assertIn("submission-form-draft.md", status)
+        self.assertIn("Human review of the Tether Template Wallet Application Pack", status)
+        self.assertIn("MiniMax `MiniMax-M2.7`: usable", smoke)
+        self.assertIn("non-high-speed", smoke)
+
 
 if __name__ == "__main__":
     unittest.main()

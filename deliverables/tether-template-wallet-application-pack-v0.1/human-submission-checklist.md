@@ -30,7 +30,7 @@ Recommended values:
 | Full name | Human legal name if required; otherwise project representative name plus project label. |
 | Email address | Dedicated project email controlled by the human owner. |
 | Website | Public GitHub repository or project page once published. |
-| Relevant experience | Use the text in `application-brief.md`; keep it factual and source-backed. |
+| Relevant experience | Use the text in `submission-form-draft.md`; keep it factual and source-backed. |
 | Terms agreement | Human-only action after reviewing Tether terms. |
 
 ## Do Not Put In Chat Or Tracked Files
@@ -52,6 +52,7 @@ Recommended values:
 - [ ] Email account has 2FA enabled.
 - [ ] GitHub project account or organization is ready.
 - [ ] Public repository decision is made.
+- [ ] `submission-form-draft.md` has been reviewed.
 - [ ] Human has reviewed Tether grant terms.
 - [ ] Human has reviewed this application pack.
 - [ ] Human understands revenue remains `0` until acceptance and payment are confirmed.

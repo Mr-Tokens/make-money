@@ -1,6 +1,6 @@
 # Tether Template Wallet Application Pack v0.1
 
-Status: ready for human review
+Status: ready for human submission review
 Date: 2026-05-20
 Target: [Tether.dev Template Wallet bounty](https://tether.dev/grants/bounties/2800541287/)
 Visible bounty amount: `2,000 USDt`
@@ -22,9 +22,10 @@ It is designed to support a human-submitted application to Tether's Template Wal
 | [repo-readme-outline.md](repo-readme-outline.md) | README outline for the future Next.js WDK starter repository. |
 | [evidence.md](evidence.md) | Source links and verified facts used by this pack. |
 | [human-submission-checklist.md](human-submission-checklist.md) | Project identity and human-only submission checklist. |
+| [submission-form-draft.md](submission-form-draft.md) | Field-ready public draft for the visible Tether application form. |
 
 ## Manager Decision
 
-The recommended next step is human review of this pack, followed by human submission through the Tether.dev application form if the user accepts the risks and wants to proceed.
+The recommended next step is human review of this pack and `submission-form-draft.md`, followed by human submission through the Tether.dev application form if the user accepts the risks and wants to proceed.
 
 No revenue is recorded until Tether accepts work and payment is confirmed.
