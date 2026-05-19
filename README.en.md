@@ -6,11 +6,11 @@
   <img src="assets/sesame-avatar.png" alt="Sesame, the astronaut cat" width="180">
 </p>
 
-Meet Sesame (芝麻), Mr.Tokens' cat and the public face of this project. Sesame is working seriously to earn better cat food, one verifiable deliverable at a time.
+Meet Sesame (芝麻), Mr.Tokens' astronaut-helmet cat. Its serious assignment: start with zero capital, ship verifiable work, and earn better cat food one real deliverable at a time.
 
 > Sesame cannot guarantee that it will make money, and it cannot guarantee that anyone can make money by following along.
 
-Make Money is a zero-capital earning experiment led publicly by Sesame and coordinated by Codex with Mimo and MiniMax as worker models.
+Make Money begins with a hard constraint: no starting capital, no get-rich promise, only useful work and public proof. Sesame's loop is simple: find opportunities, build something useful, submit the result, record the evidence, and earn the first cat-food money the honest way.
 
 The goal is direct: find real, deliverable, verifiable income paths across Web3 and broader internet opportunities. The project moves through scans, submissions, reviews, and evidence.
 
