@@ -97,7 +97,7 @@ No hype is allowed unless evidence has earned it. The public story is stronger w
 
 ## First Deliverables
 
-1. **Opportunity Scorecard Template**: a lightweight Markdown/CSV-style template for ranking bounties, grants, and public-good work.
+1. **Opportunity Scorecard Template**: a lightweight Markdown/CSV-style template for ranking bounties, grants, and public-good work. Created at `llm-wiki/wiki/templates/opportunity-scorecard.md`.
 2. **Opportunity Scan Batch 001**: at least 10 candidates, with hard-filter notes and top 3 ranking.
 3. **First Submission**: one useful deliverable submitted to a credible sponsor or public project.
 4. **Public Launch Draft**: a short build-in-public thread/post explaining the experiment and linking back to evidence.

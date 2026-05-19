@@ -73,6 +73,6 @@ The answer must be earned through evidence. Until revenue exists, the strongest 
 | Asset | Purpose | Status |
 |-------|---------|--------|
 | Web3 Builder Reputation Sprint | First zero-capital earning strategy with marketing overlay | Active |
-| Opportunity Scorecard template | Reusable free tool / internal filter | Planned |
+| Opportunity Scorecard template | Reusable free tool / internal filter | Created |
 | Build-in-public launch thread draft | Introduce the experiment once first strategy page is complete | Planned |
 | First submission postmortem | Convert first real attempt into proof and learning | Pending first submission |

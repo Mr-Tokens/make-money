@@ -25,7 +25,7 @@ The user has explicitly allowed locally using provider API credentials. Credenti
 ## Next Actions
 
 1. Retry MiniMax after the provider reset time.
-2. Create the Opportunity Scorecard template for the sprint.
-3. Use Mimo to scan for at least 10 bounties, grants, hackathons, and public-good contribution opportunities.
-4. Rank the top 3 candidates and choose the first no-capital deliverable.
-5. Draft the first build-in-public post only after the strategy page and scorecard are ready.
+2. Use Mimo to scan for at least 10 bounties, grants, hackathons, and public-good contribution opportunities.
+3. Rank the top 3 candidates with the [Opportunity Scorecard](templates/opportunity-scorecard.md).
+4. Choose the first no-capital deliverable.
+5. Draft the first build-in-public post only after the first candidate ranking is complete.

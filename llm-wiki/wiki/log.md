@@ -13,3 +13,4 @@
 - Configured focused project marketing skills through `skills.sh`: product marketing, content strategy, social, launch, AI SEO, free tools, and community marketing.
 - Added `.agents/product-marketing.md` as the canonical marketing context for future agents.
 - Added the Marketing Operating System page and activated the Web3 Builder Reputation Sprint as the first zero-capital strategy.
+- Added the Opportunity Scorecard template for ranking zero-capital candidates.
