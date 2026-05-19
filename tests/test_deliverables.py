@@ -15,6 +15,7 @@ class DeliverableTests(unittest.TestCase):
             "acceptance-checklist.md",
             "repo-readme-outline.md",
             "evidence.md",
+            "human-submission-checklist.md",
         ]
 
         missing = [name for name in required if not (PACK / name).exists()]
@@ -30,6 +31,8 @@ class DeliverableTests(unittest.TestCase):
         self.assertIn("Do not paste private credentials", combined)
         self.assertIn("Do not claim a bounty is earned or awarded", combined)
         self.assertIn("No automated system handles funds", combined)
+        self.assertIn("Dedicated project email", combined)
+        self.assertIn("Human legal name if required", combined)
         self.assertNotIn("guaranteed", combined.lower())
         self.assertNotIn("risk-free", combined.lower())
 

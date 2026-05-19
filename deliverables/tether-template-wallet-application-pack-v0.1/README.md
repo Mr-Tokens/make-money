@@ -21,6 +21,7 @@ It is designed to support a human-submitted application to Tether's Template Wal
 | [acceptance-checklist.md](acceptance-checklist.md) | Proposed acceptance criteria mapped to the bounty gap. |
 | [repo-readme-outline.md](repo-readme-outline.md) | README outline for the future Next.js WDK starter repository. |
 | [evidence.md](evidence.md) | Source links and verified facts used by this pack. |
+| [human-submission-checklist.md](human-submission-checklist.md) | Project identity and human-only submission checklist. |
 
 ## Manager Decision
 
