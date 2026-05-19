@@ -22,12 +22,16 @@ Make Money 的开局很简单：没有本金，不讲暴富，只用真实交付
 
 提交证据：[Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md)。
 
+正在执行的小钱冲刺：芝麻先把目标压到 **5-20 USDT/USDC-equivalent**，从小额付费 PR、文档修复、代码评审交付和可信 micro-bounty 入手。第一个检查目标是 `profullstack/sh1pt#133`；目前还没有记录任何到账。
+
 已经就位的部分：
 
 - LLM-Wiki：记录来源、策略、实验、风险和复盘。
 - 机会评分：先筛掉噪音，再决定是否投入时间。
 - 模型分工：Codex 负责策略、判断和验收；Mimo V2.5 Pro 与 MiniMax M2.7 处理有边界的研究、整理、写作、总结和风险检查。
 - 第一条已提交主线：Tether.dev Template Wallet 赏金，一个可在零本金条件下推进的 Web3 开发者工具机会。
+- 第二条已准备主线：Interledger Open Payments Arazzo flow documentation，一个更小的标准/文档类 grant，可以先用公开 proof-of-work 推进。
+- 正在执行的小额路线：先争取小额外部付款，记录规则和大额 grant 一样严格。
 
 ## 收入路径 🧭
 
@@ -88,6 +92,6 @@ README 只展示简版进展；完整过程进入 LLM-Wiki。
 
 ## 下一步 🚀
 
-等待 Tether 审查回复，记录任何非敏感进展，同时并行准备下一轮零本金机会扫描。
+检查 `profullstack/sh1pt#133` 这条 micro-cash 路线，继续等待 Tether 审查，同时把 [Interledger Open Payments Arazzo Application Pack v0.1](deliverables/interledger-open-payments-arazzo-pack-v0.1/README.md) 作为更高上限的文档类路线保留。
 
 这不是财务建议。这是一次零本金、可记录、可复盘的收入实验。

@@ -47,6 +47,8 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("OpenAI Agents docs", manifest)
         self.assertIn("GitHub Trending README style references", manifest)
         self.assertIn("Tether Template Wallet submission confirmation", manifest)
+        self.assertIn("Opportunity Scan Batch 002 source bundle", manifest)
+        self.assertIn("Micro Cash Scan Batch 001 source bundle", manifest)
 
     def test_github_readme_style_guide_protects_public_claims(self):
         style = (LLM_WIKI / "wiki" / "marketing" / "github-readme-style.md").read_text(encoding="utf-8")
@@ -86,6 +88,38 @@ class LlmWikiStructureTests(unittest.TestCase):
         self.assertIn("Wait for Tether's review response", status)
         self.assertIn("MiniMax `MiniMax-M2.7`: usable", smoke)
         self.assertIn("non-high-speed", smoke)
+
+    def test_batch_002_selects_interledger_without_revenue_claims(self):
+        batch = (LLM_WIKI / "wiki" / "experiments" / "2026-05-20-opportunity-scan-batch-002.md").read_text(
+            encoding="utf-8"
+        )
+        interledger = (
+            LLM_WIKI / "wiki" / "experiments" / "2026-05-20-interledger-open-payments-arazzo-verification.md"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("Interledger Open Payments SDK grant", batch)
+        self.assertIn("second execution target", interledger)
+        self.assertIn("Do not claim grant acceptance or revenue", interledger)
+        self.assertIn("not submitted", interledger)
+
+    def test_micro_cash_strategy_targets_small_real_payouts(self):
+        strategy = (
+            LLM_WIKI / "wiki" / "strategies" / "2026-05-20-micro-cash-sprint.md"
+        ).read_text(encoding="utf-8")
+        batch = (
+            LLM_WIKI / "wiki" / "experiments" / "2026-05-20-micro-cash-scan-batch-001.md"
+        ).read_text(encoding="utf-8")
+        source = (
+            LLM_WIKI / "raw" / "sources" / "2026-05-20-micro-cash-scan-batch-001-sources.md"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("5-20 USDT/USDC-equivalent", strategy)
+        self.assertIn("profullstack/sh1pt#133", batch)
+        self.assertIn("web3/web3.js", batch)
+        self.assertIn("archived/read-only", batch)
+        self.assertIn("No submission yet", batch)
+        self.assertIn("Revenue remains `0`", batch)
+        self.assertIn("Superteam Earn FAQ", source)
 
 
 if __name__ == "__main__":

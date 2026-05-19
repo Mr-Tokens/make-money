@@ -3,6 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "deliverables" / "tether-template-wallet-application-pack-v0.1"
+INTERLEDGER_PACK = ROOT / "deliverables" / "interledger-open-payments-arazzo-pack-v0.1"
 
 
 class DeliverableTests(unittest.TestCase):
@@ -44,6 +45,37 @@ class DeliverableTests(unittest.TestCase):
         self.assertNotIn(private_email, combined)
         self.assertNotIn("guaranteed", combined.lower())
         self.assertNotIn("risk-free", combined.lower())
+
+    def test_interledger_application_pack_exists_and_preserves_boundaries(self):
+        required = [
+            "README.md",
+            "application-brief.md",
+            "arazzo-flow-sketch.md",
+            "scope-and-milestones.md",
+            "sponsor-questions.md",
+            "safety-and-human-actions.md",
+            "eligibility-and-ai-disclosure-check.md",
+            "acceptance-checklist.md",
+            "evidence.md",
+            "submission-form-draft.md",
+            "human-submission-checklist.md",
+        ]
+
+        missing = [name for name in required if not (INTERLEDGER_PACK / name).exists()]
+        combined = "\n".join(path.read_text(encoding="utf-8") for path in INTERLEDGER_PACK.glob("*.md"))
+
+        self.assertEqual(missing, [])
+        self.assertIn("prepared, not submitted", combined)
+        self.assertIn("Grant application: not submitted", combined)
+        self.assertIn("Grant acceptance: none", combined)
+        self.assertIn("Revenue: 0", combined)
+        self.assertIn("Arazzo", combined)
+        self.assertIn("AI assistance", combined)
+        self.assertIn("No wallet is connected", combined)
+        self.assertIn("budget detail mismatch", combined.lower())
+        self.assertIn("Human-Only Eligibility", combined)
+        private_email = "mr.tokens" + "@" + "qq.com"
+        self.assertNotIn(private_email, combined)
 
 
 if __name__ == "__main__":

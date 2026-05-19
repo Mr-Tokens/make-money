@@ -10,6 +10,7 @@ This directory contains the lightweight local task delegation layer for the Make
 - Worker models may research, summarize, and risk-check.
 - Worker models may also draft bounded reader-facing writing through the `writing` task type.
 - MiniMax delegation uses only the non-high-speed `MiniMax-M2.7` provider.
+- Local `--source` files are included in worker prompts as bounded, redacted excerpts; URLs remain references for external review.
 - Worker models must not connect wallets, sign transactions, prepare transactions, or write directly to `llm-wiki/`.
 - Approved task output still needs strategy-lead review before wiki writeback.
 - Tests must write runtime artifacts only under `tests/artifacts/`.

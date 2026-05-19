@@ -22,12 +22,16 @@ The first real application has been submitted: Tether.dev Template Wallet bounty
 
 Submission evidence: [Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md).
 
+Active small-cash sprint: Sesame is now aiming at **5-20 USDT/USDC-equivalent** through small paid PRs, docs fixes, review handoffs, and credible micro-bounties. The first inspection target is `profullstack/sh1pt#133`; no payout is recorded yet.
+
 Already in place:
 
 - LLM-Wiki: records sources, strategies, experiments, risks, and reviews.
 - Opportunity scoring: filters noise before time is spent.
 - Model delegation: Codex owns strategy, judgment, and review; Mimo V2.5 Pro and MiniMax M2.7 handle bounded research, organization, writing, summaries, and risk checks.
 - First submitted track: Tether.dev Template Wallet bounty, a public Web3 developer tooling opportunity that can be pursued without starting capital.
+- Second prepared track: Interledger Open Payments Arazzo flow documentation, a smaller standards/docs grant path that can start as public proof-of-work.
+- Active micro lane: small external payments first, with the same evidence rules as larger grants.
 
 ## Income Path 🧭
 
@@ -88,6 +92,6 @@ This is voluntary support, not an investment, token sale, profit share, or promi
 
 ## Next Step 🚀
 
-Wait for Tether's review response, record any non-secret update, and prepare the next zero-capital opportunity scan in parallel.
+Inspect the `profullstack/sh1pt#133` micro-cash path, keep Tether pending review, and use the [Interledger Open Payments Arazzo Application Pack v0.1](deliverables/interledger-open-payments-arazzo-pack-v0.1/README.md) as the prepared higher-upside docs track.
 
 This is not financial advice. This is a zero-capital, documented, reviewable earning experiment.

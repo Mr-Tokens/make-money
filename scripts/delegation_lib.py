@@ -17,6 +17,9 @@ PROVIDERS_PATH = DELEGATION_DIR / "providers.example.json"
 ENV_PATH = ROOT / ".env"
 
 TASK_TYPES = {"research", "summary", "risk-check", "writing"}
+SOURCE_FILE_MAX_CHARS = 8_000
+SOURCE_TOTAL_MAX_CHARS = 24_000
+FORBIDDEN_SOURCE_DIRS = {".git", ".venv", ".worktrees", "node_modules", "secret", "venv"}
 TOKEN_PATTERNS = [
     re.compile(r"sk-[A-Za-z0-9_-]{16,}"),
     re.compile(r"tp-[A-Za-z0-9_-]{16,}"),
@@ -119,12 +122,72 @@ def read_worker_template(task_type: str) -> str:
     return (PROMPTS_DIR / f"worker-{task_type}.md").read_text(encoding="utf-8")
 
 
+def is_url_source(source: str) -> bool:
+    return source.startswith(("http://", "https://"))
+
+
+def resolve_source_file(source: str) -> Path:
+    path = Path(source)
+    candidate = path if path.is_absolute() else ROOT / path
+    resolved = candidate.resolve()
+    try:
+        relative = resolved.relative_to(ROOT.resolve())
+    except ValueError as exc:
+        raise DelegationError(f"Source must stay inside project root: {source}") from exc
+
+    parts = {part.lower() for part in relative.parts}
+    if parts & FORBIDDEN_SOURCE_DIRS:
+        raise DelegationError(f"Source is not safe for worker prompts: {source}")
+
+    name = relative.name.lower()
+    if name == ".env" or (name.startswith(".env.") and name != ".env.example"):
+        raise DelegationError(f"Source is not safe for worker prompts: {source}")
+    if not resolved.exists() or not resolved.is_file():
+        raise DelegationError(f"Source file not found: {source}")
+    return resolved
+
+
+def read_source_excerpt(source: str) -> str:
+    if is_url_source(source):
+        return f"### {source}\nURL source. Fetch and summarize externally before expecting detailed worker review."
+
+    path = resolve_source_file(source)
+    text = path.read_text(encoding="utf-8", errors="replace")
+    text = redact_secrets(text)
+    truncated = len(text) > SOURCE_FILE_MAX_CHARS
+    excerpt = text[:SOURCE_FILE_MAX_CHARS].rstrip()
+    if truncated:
+        excerpt += "\n...[truncated]"
+    return f"### {source}\n```text\n{excerpt}\n```"
+
+
+def build_source_excerpts(sources: list[str]) -> str:
+    if not sources:
+        return "- None"
+
+    excerpts: list[str] = []
+    used = 0
+    for source in sources:
+        excerpt = read_source_excerpt(source)
+        remaining = SOURCE_TOTAL_MAX_CHARS - used
+        if remaining <= 0:
+            excerpts.append("...[source excerpt budget exhausted]")
+            break
+        if len(excerpt) > remaining:
+            excerpt = excerpt[:remaining].rstrip() + "\n...[source excerpt budget exhausted]"
+        excerpts.append(excerpt)
+        used += len(excerpt)
+    return "\n\n".join(excerpts)
+
+
 def build_messages(task_type: str, prompt_text: str, sources: list[str]) -> list[dict[str, str]]:
     template = read_worker_template(task_type)
     source_block = "\n".join(f"- {source}" for source in sources) if sources else "- None"
+    source_excerpts = build_source_excerpts(sources)
     user_prompt = (
         f"Task type: {task_type}\n\n"
         f"Sources:\n{source_block}\n\n"
+        f"Source excerpts:\n{source_excerpts}\n\n"
         f"Task:\n{prompt_text}\n"
     )
     return [

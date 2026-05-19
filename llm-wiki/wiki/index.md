@@ -23,6 +23,7 @@ This is the durable knowledge map for the Make Money experiment.
 ## Active Strategy Records
 
 - [Web3 Builder Reputation Sprint](strategies/2026-05-20-web3-builder-reputation-sprint.md)
+- [Micro Cash Sprint](strategies/2026-05-20-micro-cash-sprint.md)
 
 ## Active Protocol Records
 
@@ -33,6 +34,9 @@ This is the durable knowledge map for the Make Money experiment.
 - [Provider Smoke Test](experiments/2026-05-20-provider-smoke.md)
 - [Opportunity Scan Batch 001](experiments/2026-05-20-opportunity-scan-batch-001.md)
 - [Tether Template Wallet Verification](experiments/2026-05-20-tether-template-wallet-verification.md)
+- [Opportunity Scan Batch 002](experiments/2026-05-20-opportunity-scan-batch-002.md)
+- [Interledger Open Payments Arazzo Verification](experiments/2026-05-20-interledger-open-payments-arazzo-verification.md)
+- [Micro Cash Scan Batch 001](experiments/2026-05-20-micro-cash-scan-batch-001.md)
 
 ## Initial Direction
 

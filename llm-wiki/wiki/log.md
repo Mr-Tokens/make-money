@@ -35,3 +35,10 @@
 - Ran and approved the MiniMax non-high-speed `MiniMax-M2.7` smoke task; both configured worker providers are now usable.
 - Added a public-safe Tether `submission-form-draft.md` while keeping contact email and legal identity details out of tracked files.
 - Recorded human submission of the Tether.dev Template Wallet bounty application and the returned confirmation message: "Thank you for your application! We will review it and get back to you soon."
+- Ran Opportunity Scan Batch 002 using Web3Grants as a discovery source and official pages for verification.
+- Selected Interledger Open Payments Arazzo flow documentation as the second zero-capital execution target.
+- Created the Interledger Open Payments Arazzo Application Pack v0.1 and a first Arazzo flow sketch as public proof-of-work.
+- Fixed the Delegation Agent source-loading path so safe local `--source` files are included as bounded excerpts in worker prompts, while `.env`, `secret/`, `.git/`, `.venv/`, and out-of-root paths are rejected.
+- Ran and approved a MiniMax risk-check pass on the Interledger pack after source excerpts were available; added sponsor questions plus eligibility and AI disclosure checks.
+- Created the Micro Cash Sprint targeting 5-20 USDT/USDC-equivalent as the next smaller earning lane.
+- Ran Micro Cash Scan Batch 001 and selected `profullstack/sh1pt#133` for repository inspection while rejecting the 10 USDC GitGig/web3.js path because the upstream repo is archived/read-only.

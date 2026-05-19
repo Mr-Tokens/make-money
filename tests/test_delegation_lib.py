@@ -11,6 +11,8 @@ from test_paths import make_artifact_dir, remove_artifact_dir
 
 from delegation_lib import (
     TASK_TYPES,
+    DelegationError,
+    build_messages,
     load_env_file,
     load_providers,
     read_worker_template,
@@ -133,6 +135,25 @@ class DelegationLibTests(unittest.TestCase):
         self.assertIn("[REDACTED_TOKEN]", saved)
         self.assertNotIn("sk-test-aaaaaaaa", saved)
         self.assertNotIn("tp-test-bbbbbbbb", saved)
+
+    def test_build_messages_includes_allowed_source_file_content(self):
+        artifact_dir = make_artifact_dir("source-content-")
+        self.addCleanup(remove_artifact_dir, artifact_dir)
+        source = artifact_dir / "source.md"
+        source.write_text("Unique source evidence for worker review.\n", encoding="utf-8")
+
+        messages = build_messages("summary", "Use the provided source.", [str(source.relative_to(ROOT))])
+        user_message = messages[-1]["content"]
+
+        self.assertIn("Source excerpts:", user_message)
+        self.assertIn("Unique source evidence for worker review.", user_message)
+
+    def test_build_messages_rejects_secret_or_env_sources(self):
+        with self.assertRaises(DelegationError):
+            build_messages("summary", "Do not read this.", ["secret/project-identity.md"])
+
+        with self.assertRaises(DelegationError):
+            build_messages("summary", "Do not read this.", [".env"])
 
     def test_approve_and_reject_task_update_review_state(self):
         import delegation_lib

@@ -27,3 +27,4 @@ Each strategy should include:
 ## Active Strategies
 
 - [Web3 Builder Reputation Sprint](2026-05-20-web3-builder-reputation-sprint.md)
+- [Micro Cash Sprint](2026-05-20-micro-cash-sprint.md)
