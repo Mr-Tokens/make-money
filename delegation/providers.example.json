@@ -1,0 +1,26 @@
+{
+  "minimax": {
+    "base_url_env": "MINIMAX_BASE_URL",
+    "api_key_env": "MINIMAX_API_KEY",
+    "model_env": "MINIMAX_MODEL",
+    "default_base_url": "https://api.minimaxi.com/v1",
+    "default_model": "MiniMax-M2.7",
+    "token_limit_field": "max_tokens"
+  },
+  "minimax-fast": {
+    "base_url_env": "MINIMAX_BASE_URL",
+    "api_key_env": "MINIMAX_API_KEY",
+    "model_env": "MINIMAX_FAST_MODEL",
+    "default_base_url": "https://api.minimaxi.com/v1",
+    "default_model": "MiniMax-M2.7-highspeed",
+    "token_limit_field": "max_tokens"
+  },
+  "mimo": {
+    "base_url_env": "MIMO_BASE_URL",
+    "api_key_env": "MIMO_API_KEY",
+    "model_env": "MIMO_MODEL",
+    "default_base_url": "https://api.xiaomimimo.com/v1",
+    "default_model": "mimo-v2.5-pro",
+    "token_limit_field": "max_completion_tokens"
+  }
+}
