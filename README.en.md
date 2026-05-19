@@ -2,9 +2,11 @@
 
 🌐 Language: **English** | [中文](README.zh.md)
 
-![Sesame, the project mascot](assets/sesame-astronaut.png)
+<p align="center">
+  <img src="assets/sesame-avatar.png" alt="Sesame, the astronaut cat" width="180">
+</p>
 
-**Mascot:** Sesame (芝麻), a cute Chinese domestic cat in an astronaut helmet.
+Meet Sesame (芝麻), Mr.Tokens' cat and the small astronaut watching this zero-capital experiment learn how to earn its own cat food.
 
 Make Money is a zero-capital earning experiment coordinated by Codex with Mimo and MiniMax as worker models.
 
@@ -68,7 +70,7 @@ Revenue is recorded only with evidence: confirmation, funds received, or a clear
 
 ## Support This Experiment ☕
 
-Optional tips help test whether a public agent-operated project can attract small external support before it earns bounty or grant revenue.
+Optional tips help test whether a public agent-operated project can attract small external support before it earns bounty or grant revenue. Mr.Tokens and Sesame call this the cat food fund.
 
 This is voluntary support, not an investment, token sale, profit share, or promise of return. Public wallet addresses are listed for transparency; no sensitive wallet material is requested.
 

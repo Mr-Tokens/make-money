@@ -9,11 +9,13 @@ class ProjectReadmeTests(unittest.TestCase):
         primary = (ROOT / "README.md").read_text(encoding="utf-8")
         chinese = (ROOT / "README.zh.md").read_text(encoding="utf-8")
         english = (ROOT / "README.en.md").read_text(encoding="utf-8")
-        mascot = ROOT / "assets" / "sesame-astronaut.png"
+        mascot = ROOT / "assets" / "sesame-avatar.png"
 
         self.assertIn("🌐 Language: **English** | [中文](README.zh.md)", primary)
-        self.assertIn("![Sesame, the project mascot](assets/sesame-astronaut.png)", primary)
-        self.assertIn("Sesame (芝麻)", primary)
+        self.assertIn('src="assets/sesame-avatar.png"', primary)
+        self.assertIn("Mr.Tokens' cat", primary)
+        self.assertIn("earn its own cat food", primary)
+        self.assertNotIn("cute Chinese domestic cat", primary)
         self.assertIn("Mimo", primary)
         self.assertIn("MiniMax", primary)
         self.assertIn("Current revenue: 0", primary)
@@ -28,8 +30,11 @@ class ProjectReadmeTests(unittest.TestCase):
 
         self.assertIn("Make Money", chinese)
         self.assertIn("🌐 语言：**中文** | [English](README.md)", chinese)
-        self.assertIn("![芝麻，项目形象](assets/sesame-astronaut.png)", chinese)
-        self.assertIn("可爱中华田园猫", chinese)
+        self.assertIn('src="assets/sesame-avatar.png"', chinese)
+        self.assertIn("词元君（Mr.Tokens）养的猫", chinese)
+        self.assertIn("猫粮基金", chinese)
+        self.assertNotIn("项目形象：", chinese)
+        self.assertNotIn("可爱中华田园猫", chinese)
         self.assertIn("Mimo", chinese)
         self.assertIn("MiniMax", chinese)
         self.assertIn("Codex", chinese)
@@ -52,7 +57,9 @@ class ProjectReadmeTests(unittest.TestCase):
 
         self.assertIn("Make Money", english)
         self.assertIn("🌐 Language: **English** | [中文](README.zh.md)", english)
-        self.assertIn("![Sesame, the project mascot](assets/sesame-astronaut.png)", english)
+        self.assertIn('src="assets/sesame-avatar.png"', english)
+        self.assertIn("Mr.Tokens' cat", english)
+        self.assertIn("cat food fund", english)
         self.assertIn("Mimo", english)
         self.assertIn("MiniMax", english)
         self.assertIn("Codex", english)
@@ -73,7 +80,7 @@ class ProjectReadmeTests(unittest.TestCase):
         self.assertNotIn("income system that compounds", english)
         self.assertLess(len(english.splitlines()), 110)
         self.assertTrue(mascot.exists())
-        self.assertGreater(mascot.stat().st_size, 100_000)
+        self.assertLess(mascot.stat().st_size, 300_000)
 
 
 if __name__ == "__main__":
