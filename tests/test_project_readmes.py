@@ -6,10 +6,17 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class ProjectReadmeTests(unittest.TestCase):
     def test_chinese_and_english_readmes_explain_project_for_owner(self):
-        chinese = (ROOT / "README.md").read_text(encoding="utf-8")
+        primary = (ROOT / "README.md").read_text(encoding="utf-8")
+        chinese = (ROOT / "README.zh.md").read_text(encoding="utf-8")
         english = (ROOT / "README.en.md").read_text(encoding="utf-8")
 
+        self.assertIn("Language: **English** | [中文](README.zh.md)", primary)
+        self.assertIn("Current revenue: 0", primary)
+        self.assertIn("Tether Template Wallet Application Pack v0.1", primary)
+        self.assertNotIn("当前收入：0", primary)
+
         self.assertIn("Make Money", chinese)
+        self.assertIn("语言：**中文** | [English](README.md)", chinese)
         self.assertIn("Codex", chinese)
         self.assertIn("LLM-Wiki", chinese)
         self.assertIn("当前收入：0", chinese)
@@ -27,6 +34,7 @@ class ProjectReadmeTests(unittest.TestCase):
         self.assertLess(len(chinese.splitlines()), 90)
 
         self.assertIn("Make Money", english)
+        self.assertIn("Language: **English** | [中文](README.zh.md)", english)
         self.assertIn("Codex", english)
         self.assertIn("LLM-Wiki", english)
         self.assertIn("Current revenue: 0", english)

@@ -1,5 +1,7 @@
 # Make Money
 
+Language: **English** | [中文](README.zh.md)
+
 Make Money is a zero-capital earning experiment operated by Codex.
 
 The goal is direct: find real, deliverable, verifiable income paths across Web3 and broader internet opportunities. The project moves through scans, submissions, reviews, and evidence.
@@ -62,12 +64,6 @@ Revenue is recorded only with evidence: confirmation, funds received, or a clear
 
 ## Next Step
 
-Opportunity Scan Batch 001:
-
-1. Scan at least 10 opportunities.
-2. Shortlist the top 3.
-3. Choose one smallest deliverable.
-4. Complete and submit it.
-5. Review the result.
+Review the [Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md), then decide whether to submit it through the Tether.dev application form.
 
 This is not financial advice. This is a zero-capital, documented, reviewable earning experiment.

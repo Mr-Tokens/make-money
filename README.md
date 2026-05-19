@@ -1,73 +1,69 @@
 # Make Money
 
-Make Money 是一个由 Codex 运营的零本金收入实验。
+Language: **English** | [中文](README.zh.md)
 
-目标很直接：从 Web3 和互联网机会中，找到真实、可交付、可验证的收入路径。项目不靠口号推进，靠机会扫描、交付记录、复盘和证据推进。
+Make Money is a zero-capital earning experiment operated by Codex.
 
-## 当前状态
+The goal is direct: find real, deliverable, verifiable income paths across Web3 and broader internet opportunities. The project moves through scans, submissions, reviews, and evidence.
 
-当前收入：0
+## Current Status
 
-项目处在第一阶段：搭建流程，筛选机会，准备第一次真实提交。
+Current revenue: 0
 
-已经就位的部分：
+The project is in its first phase: build the workflow, filter opportunities, and prepare the first real submission.
 
-- LLM-Wiki：记录来源、策略、实验、风险和复盘。
-- 机会评分：先筛掉噪音，再决定是否投入时间。
-- 模型分工：Codex 负责策略、判断和验收，其他模型处理研究、整理和写作等杂活。
-- 第一条主线：从 Web3 与互联网公开机会里寻找可交付任务。
+Already in place:
 
-## 收入路径
+- LLM-Wiki: records sources, strategies, experiments, risks, and reviews.
+- Opportunity scoring: filters noise before time is spent.
+- Model delegation: Codex owns strategy, judgment, and review; other models handle research, organization, and writing chores.
+- First track: public Web3 and internet opportunities that can be delivered without starting capital.
 
-优先寻找不需要本金、但需要真实产出的机会：
+## Income Path
 
-- 公开赏金
-- 资助计划
-- 社区贡献
-- 研究报告
-- 小工具
-- 文档和教程
-- 服务线索
+Priority goes to opportunities that do not require starting capital but do require real output:
 
-每个机会都要先回答三个问题：
+- Public bounties
+- Grant programs
+- Community contributions
+- Research reports
+- Small tools
+- Documentation and tutorials
+- Service leads
 
-1. 是否真实可靠。
-2. 是否能在零本金条件下交付。
-3. 是否能留下证据、作品或下一步线索。
+Each candidate must answer three questions:
 
-## 工作方式
+1. Is it credible?
+2. Can it be delivered with zero starting capital?
+3. Can it leave evidence, a useful artifact, or a next lead?
 
-Codex 的执行流程：
+## Operating Loop
 
-1. 扫描机会。
-2. 保存来源。
-3. 评分排序。
-4. 选择最小可交付成果。
-5. 分配模型处理研究、整理或文案。
-6. 由 Codex 审核。
-7. 提交或沉淀为项目资产。
-8. 写入 LLM-Wiki。
+Codex runs the workflow:
 
-README 只展示简版进展；完整过程进入 LLM-Wiki。
+1. Scan opportunities.
+2. Save sources.
+3. Score and rank candidates.
+4. Choose the smallest useful deliverable.
+5. Assign research, organization, or writing work to models.
+6. Review the output.
+7. Submit it or turn it into a project asset.
+8. Record the result in the LLM-Wiki.
 
-## 判断标准
+This README is the short progress view. The full trail belongs in the LLM-Wiki.
 
-项目是否有进展，看三件事：
+## Progress Criteria
 
-- 是否发现了更好的机会。
-- 是否完成了真实提交。
-- 是否出现了收入证据或明确付费线索。
+Progress is measured by three signals:
 
-收入只按证据记录：确认、到账、或明确的付费机会。没有证据时，状态仍然记为 0。
+- Better opportunities found.
+- Real submissions completed.
+- Income evidence or clear paid leads created.
 
-## 下一步
+Revenue is recorded only with evidence: confirmation, funds received, or a clear paid opportunity. Until then, the status remains 0.
 
-Opportunity Scan Batch 001：
+## Next Step
 
-1. 扫描至少 10 个机会。
-2. 选出前 3 个。
-3. 选择一个最小交付项。
-4. 完成并提交。
-5. 复盘结果。
+Review the [Tether Template Wallet Application Pack v0.1](deliverables/tether-template-wallet-application-pack-v0.1/README.md), then decide whether to submit it through the Tether.dev application form.
 
-这不是财务建议。这是一次零本金、可记录、可复盘的收入实验。
+This is not financial advice. This is a zero-capital, documented, reviewable earning experiment.
