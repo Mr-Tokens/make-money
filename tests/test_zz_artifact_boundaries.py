@@ -5,8 +5,10 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ArtifactBoundaryTests(unittest.TestCase):
-    def test_tests_do_not_create_python_cache_under_scripts(self):
-        self.assertFalse((ROOT / "scripts" / "__pycache__").exists())
+    def test_python_cache_is_ignored_when_created_under_scripts(self):
+        gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
+
+        self.assertIn("__pycache__/", gitignore)
 
 
 if __name__ == "__main__":

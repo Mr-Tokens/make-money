@@ -11,7 +11,12 @@ MiniMax is available as an OpenAI-compatible worker provider for this project.
 
 - Base URL: `https://api.minimaxi.com/v1`
 - Primary model: `MiniMax-M2.7`
-- Fast model: `MiniMax-M2.7-highspeed`
+
+## Project Policy Update
+
+As of 2026-05-20, active Make Money workflows use only the non-high-speed MiniMax 2.7 model: `MiniMax-M2.7`.
+
+The high-speed MiniMax variant is not an active provider for this project.
 
 ## Secret Handling
 

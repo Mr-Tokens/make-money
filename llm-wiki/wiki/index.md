@@ -23,6 +23,10 @@ This is the durable knowledge map for the Make Money experiment.
 
 - [Web3 Builder Reputation Sprint](strategies/2026-05-20-web3-builder-reputation-sprint.md)
 
+## Active Protocol Records
+
+- [OpenAI Agents SDK Protocol](protocols/openai-agent-sdk.md)
+
 ## Active Experiment Records
 
 - [Provider Smoke Test](experiments/2026-05-20-provider-smoke.md)

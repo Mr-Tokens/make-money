@@ -11,3 +11,7 @@ Each page should include:
 - Known risks
 - Source links
 - Related strategies
+
+## Active Protocols
+
+- [OpenAI Agents SDK Protocol](openai-agent-sdk.md)

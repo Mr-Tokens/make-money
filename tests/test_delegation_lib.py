@@ -10,14 +10,23 @@ sys.dont_write_bytecode = True
 from test_paths import make_artifact_dir, remove_artifact_dir
 
 from delegation_lib import (
+    TASK_TYPES,
     load_env_file,
     load_providers,
+    read_worker_template,
     redact_secrets,
     resolve_provider,
 )
 
 
 class DelegationLibTests(unittest.TestCase):
+    def test_writing_worker_template_is_available(self):
+        self.assertIn("writing", TASK_TYPES)
+        template = read_worker_template("writing")
+
+        self.assertIn("marketing", template.lower())
+        self.assertIn("README", template)
+
     def test_redact_secrets_masks_known_token_shapes(self):
         text = (
             "minimax sk-test-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa "

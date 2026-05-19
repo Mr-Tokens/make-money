@@ -14,3 +14,9 @@
 - Added `.agents/product-marketing.md` as the canonical marketing context for future agents.
 - Added the Marketing Operating System page and activated the Web3 Builder Reputation Sprint as the first zero-capital strategy.
 - Added the Opportunity Scorecard template for ranking zero-capital candidates.
+- Created a `uv` Python environment and added `openai-agents` plus `httpx[socks]`.
+- Added `scripts/openai_agent_manager.py` as the first OpenAI Agents SDK manager scaffold with specialist worker agents and project Skills loading.
+- Recorded the OpenAI Agents SDK Protocol in the wiki.
+- Added Chinese and English owner-facing README files explaining how Codex operates, earns, delegates, markets, and reports progress.
+- Updated active MiniMax policy to use only non-high-speed `MiniMax-M2.7`.
+- Added a reusable `writing` worker type and used Mimo to polish the owner-facing README into a lighter, less internal style.

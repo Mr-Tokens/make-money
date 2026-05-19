@@ -16,7 +16,7 @@ PROMPTS_DIR = DELEGATION_DIR / "prompts"
 PROVIDERS_PATH = DELEGATION_DIR / "providers.example.json"
 ENV_PATH = ROOT / ".env"
 
-TASK_TYPES = {"research", "summary", "risk-check"}
+TASK_TYPES = {"research", "summary", "risk-check", "writing"}
 TOKEN_PATTERNS = [
     re.compile(r"sk-[A-Za-z0-9_-]{16,}"),
     re.compile(r"tp-[A-Za-z0-9_-]{16,}"),

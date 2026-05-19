@@ -20,8 +20,8 @@ from delegation_lib import (
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Delegate a bounded task to a worker model.")
-    parser.add_argument("--provider", required=True, choices=["minimax", "minimax-fast", "mimo"])
-    parser.add_argument("--type", required=True, choices=["research", "summary", "risk-check"])
+    parser.add_argument("--provider", required=True, choices=["minimax", "mimo"])
+    parser.add_argument("--type", required=True, choices=["research", "summary", "risk-check", "writing"])
     parser.add_argument("--title", required=True)
     parser.add_argument("--prompt")
     parser.add_argument("--prompt-file")

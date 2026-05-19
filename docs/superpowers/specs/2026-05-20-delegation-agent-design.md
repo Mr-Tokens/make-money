@@ -44,9 +44,10 @@ Committed files may record only public provider metadata:
 | Provider | Base URL | Model | Source |
 | --- | --- | --- | --- |
 | MiniMax | `https://api.minimaxi.com/v1` | `MiniMax-M2.7` | https://platform.minimaxi.com/docs/guides/models-intro |
-| MiniMax high speed | `https://api.minimaxi.com/v1` | `MiniMax-M2.7-highspeed` | https://platform.minimaxi.com/docs/api-reference/text-openai-api |
 | Xiaomi Mimo | `https://api.xiaomimimo.com/v1` | `mimo-v2.5-pro` | https://platform.xiaomimimo.com/docs/en-US/welcome |
 | Xiaomi Mimo Token Plan | set via `MIMO_BASE_URL` | `mimo-v2.5-pro` | https://platform.xiaomimimo.com/llms.txt |
+
+Policy update: active MiniMax delegation uses only the non-high-speed `MiniMax-M2.7` model.
 
 Mimo Token Plan may require cluster-specific Base URLs from the subscription page. The implementation must read `MIMO_BASE_URL` from `.env` and treat the default direct API URL as a fallback only.
 
@@ -75,7 +76,7 @@ scripts/
 
 `delegate_task.py` creates a task from:
 
-- provider name: `minimax`, `minimax-fast`, or `mimo`
+- provider name: `minimax` or `mimo`
 - task type: `research`, `summary`, or `risk-check`
 - title
 - prompt text
@@ -170,7 +171,6 @@ Required variables:
 MINIMAX_BASE_URL=https://api.minimaxi.com/v1
 MINIMAX_API_KEY=
 MINIMAX_MODEL=MiniMax-M2.7
-MINIMAX_FAST_MODEL=MiniMax-M2.7-highspeed
 
 MIMO_BASE_URL=https://api.xiaomimimo.com/v1
 MIMO_API_KEY=

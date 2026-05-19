@@ -8,6 +8,8 @@ This directory contains the lightweight local task delegation layer for the Make
 - `.env` is ignored by git.
 - Do not paste API keys, wallet secrets, seed phrases, or private keys into prompts.
 - Worker models may research, summarize, and risk-check.
+- Worker models may also draft bounded reader-facing writing through the `writing` task type.
+- MiniMax delegation uses only the non-high-speed `MiniMax-M2.7` provider.
 - Worker models must not connect wallets, sign transactions, prepare transactions, or write directly to `llm-wiki/`.
 - Approved task output still needs strategy-lead review before wiki writeback.
 - Tests must write runtime artifacts only under `tests/artifacts/`.
@@ -33,7 +35,10 @@ python scripts/delegate_task.py --provider mimo --type research --title "Dry run
 
 ```powershell
 python scripts/delegate_task.py --provider minimax --type summary --title "Protocol summary" --prompt "Summarize the provided source note." --source "llm-wiki/raw/sources/example.md"
+python scripts/delegate_task.py --provider mimo --type writing --title "Owner README polish" --prompt "Draft a lighter owner-facing README."
 ```
+
+Use `writing` for reusable reader-facing polish tasks such as README updates, owner briefings, launch notes, and social-style progress drafts. Codex should still review and edit the result before committing.
 
 ## Review A Task
 

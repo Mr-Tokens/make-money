@@ -17,6 +17,17 @@ These rules apply to every agent and script working in this repository.
 - Use `tests/artifacts/` for runtime test output.
 - Do not let tests write task JSON, logs, cache files, or temporary files into production directories such as `delegation/tasks/`, `llm-wiki/`, or the repository root.
 - `tests/artifacts/` is ignored by git and may be deleted at any time.
+- Python `__pycache__/` directories, including under `scripts/`, are acceptable local interpreter caches because they are ignored by git.
+
+## Python And Agents SDK
+
+- Use `uv` for Python dependency and virtual environment management.
+- Keep the project virtual environment at `.venv/`; it is intentionally ignored by git.
+- Commit `pyproject.toml` and `uv.lock` when dependencies change.
+- The OpenAI Agents SDK manager scaffold lives in `scripts/openai_agent_manager.py`.
+- Project-level skills live under `.agents/skills/`; Agents SDK workers should read relevant `SKILL.md` files before doing specialized work.
+- Prefer a manager-with-specialist-workers pattern for chores such as research, LLM-Wiki maintenance, code maintenance, marketing drafts, and risk checks.
+- Active MiniMax use is limited to the non-high-speed `MiniMax-M2.7` provider.
 
 ## Git And Worktrees
 
@@ -29,6 +40,8 @@ These rules apply to every agent and script working in this repository.
 - Durable project knowledge belongs in `llm-wiki/` once that knowledge base exists.
 - Raw sources should be saved under `llm-wiki/raw/` when practical and allowed.
 - Strategy conclusions must be source-backed, risk-aware, and written so future agents can audit them.
+- `README.md` and `README.en.md` are owner-facing status and marketing explanations maintained by agents; keep them plain-language, honest about revenue, and evidence-backed.
+- Prefer the reusable `writing` worker for README polish and owner-facing progress updates; Codex remains responsible for final review.
 
 ## Marketing And Public Claims
 

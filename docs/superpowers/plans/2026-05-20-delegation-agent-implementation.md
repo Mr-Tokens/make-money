@@ -22,7 +22,7 @@
 - Create `delegation/prompts/worker-summary.md`: summary-worker contract.
 - Create `delegation/prompts/worker-risk-check.md`: risk-check-worker contract.
 - Create `delegation/tasks/pending/.gitkeep`, `delegation/tasks/completed/.gitkeep`, `delegation/tasks/rejected/.gitkeep`: keep task directories in git.
-- Modify `.env.example`: add `MINIMAX_FAST_MODEL`.
+- Modify `.env.example`: include the non-high-speed MiniMax model only.
 
 ---
 
@@ -438,14 +438,6 @@ Create `delegation/providers.example.json`:
     "default_model": "MiniMax-M2.7",
     "token_limit_field": "max_tokens"
   },
-  "minimax-fast": {
-    "base_url_env": "MINIMAX_BASE_URL",
-    "api_key_env": "MINIMAX_API_KEY",
-    "model_env": "MINIMAX_FAST_MODEL",
-    "default_base_url": "https://api.minimaxi.com/v1",
-    "default_model": "MiniMax-M2.7-highspeed",
-    "token_limit_field": "max_tokens"
-  },
   "mimo": {
     "base_url_env": "MIMO_BASE_URL",
     "api_key_env": "MIMO_API_KEY",
@@ -532,7 +524,7 @@ delegation/tasks/rejected/.gitkeep
 Ensure `.env.example` includes:
 
 ```text
-MINIMAX_FAST_MODEL=MiniMax-M2.7-highspeed
+MINIMAX_MODEL=MiniMax-M2.7
 ```
 
 - [ ] **Step 5: Run tests**
@@ -634,7 +626,7 @@ from delegation_lib import (
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Delegate a bounded task to a worker model.")
-    parser.add_argument("--provider", required=True, choices=["minimax", "minimax-fast", "mimo"])
+    parser.add_argument("--provider", required=True, choices=["minimax", "mimo"])
     parser.add_argument("--type", required=True, choices=["research", "summary", "risk-check"])
     parser.add_argument("--title", required=True)
     parser.add_argument("--prompt")
